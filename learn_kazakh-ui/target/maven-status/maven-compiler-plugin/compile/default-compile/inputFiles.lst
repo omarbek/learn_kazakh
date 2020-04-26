@@ -1,10 +1,13 @@
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/login/LoginUI.java
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java
-/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupFormFactory.java
-/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMenuFactory.java
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/main/MainLayoutFactory.java
+/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory.java
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupUI.java
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/login/LoginFormFactory.java
-/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/navigator/LearnKazakhNavigator.java
+/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/main/AsdLayoutFactory.java
+/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupFormFactory.java
+/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMenuFactory.java
+/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java
+/Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/main/QweLayoutFactory.java
 /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/UIComponentBuilder.java
