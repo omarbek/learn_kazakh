@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecb6e7c8-2d1f-4606-95db-bd4fc29390ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/Role.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/Task.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/role/RoleRepository.java" afterDir="false" />
@@ -17,8 +16,8 @@
       <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/task/TaskService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/task/TaskServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a505ee2c-a78f-44ef-9adb-acff004f30d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a505ee2c-a78f-44ef-9adb-acff004f30d6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/classes/kz/omar/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/classes/kz/omar/model/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/learn_kazakh-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/learn_kazakh-model-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -30,7 +29,7 @@
       <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/learn_kazakh-repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/target/learn_kazakh-repository-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/RegisterUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/RegisterUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/RegisterUserServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/classes/kz/omar/service/security/RegisterUserService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/classes/kz/omar/service/security/RegisterUserServiceImpl.class" beforeDir="false" />
@@ -45,6 +44,8 @@
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory$LearnKazakhMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory$LearnKazakhMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory.class" afterDir="false" />
@@ -55,10 +56,6 @@
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-utils/target/learn_kazakh-utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-utils/target/learn_kazakh-utils-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-utils/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-utils/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-repository-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-ui-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-ui-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -96,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="735">
               <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,14 +105,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+            <state relative-caret-position="341">
+              <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2423#2424#0" expanded="true" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2520#2521#0" expanded="true" />
-                <element signature="e#2565#2566#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -239,6 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,75 +241,17 @@
               <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="omar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="omar" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
-              <item name="learn_kazakh-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="omar" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587916022932" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587916109054" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -485,11 +422,34 @@
       <updated>1587818896975</updated>
       <workItem from="1587818898684" duration="7658000" />
       <workItem from="1587837095410" duration="28212000" />
+      <workItem from="1587915883975" duration="223000" />
     </task>
+    <task id="LOCAL-00001" summary="added gitignore file">
+      <created>1587916021663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587916021663</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added target">
+      <created>1587916047868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587916047868</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added idea">
+      <created>1587916094522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587916094522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35870000" />
+    <option name="totallyTimeSpent" value="36185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,8 +462,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28397712" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28755364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -544,6 +505,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added gitignore file" />
+    <MESSAGE value="added target" />
+    <MESSAGE value="added idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="added idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,13 +595,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/stream/AbstractTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_kazakh-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -995,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="735">
           <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1003,16 +963,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+        <state relative-caret-position="341">
+          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2565#2566#0" expanded="true" />
           </folding>
         </state>
       </provider>
