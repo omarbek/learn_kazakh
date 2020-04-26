@@ -2,9 +2,7 @@ package kz.omar.ui.main;
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
-import com.vaadin.server.ThemeResource;
 import com.vaadin.spring.annotation.SpringView;
-import com.vaadin.ui.Embedded;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
@@ -16,7 +14,7 @@ import kz.omar.ui.commons.LearnKazakhMainUI;
  * @project learn_kazakh
  */
 @SpringView(name = QweLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class QweLayoutFactory extends VerticalLayout implements View{
+public class QweLayoutFactory extends VerticalLayout implements View {
     
     public static final String NAME = "qwe";
     

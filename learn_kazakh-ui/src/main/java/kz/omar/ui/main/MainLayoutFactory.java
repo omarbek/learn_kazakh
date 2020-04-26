@@ -4,9 +4,10 @@ import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.spring.annotation.SpringView;
-import com.vaadin.ui.*;
+import com.vaadin.ui.Embedded;
+import com.vaadin.ui.Panel;
+import com.vaadin.ui.VerticalLayout;
 import kz.omar.ui.commons.LearnKazakhMainUI;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Omarbek.Dinassil
@@ -14,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @project learn_kazakh
  */
 @SpringView(name = MainLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class MainLayoutFactory extends VerticalLayout implements View{
+public class MainLayoutFactory extends VerticalLayout implements View {
     
     public static final String NAME = "main";
     
@@ -22,7 +23,7 @@ public class MainLayoutFactory extends VerticalLayout implements View{
         setMargin(true);
         
         Panel panel = new Panel();
-    
+        
         Embedded logo = new Embedded();
         logo.setSource(new ThemeResource("../../images/kazakh.png"));
         

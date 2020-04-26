@@ -28,7 +28,7 @@ public class LoginFormFactory {
         private PasswordField password;
         private Button loginButton;
         private Button signupButton;
-    
+        
         public LoginForm init() {//Builder pattern
             root = new VerticalLayout();
             root.setMargin(true);
@@ -48,7 +48,7 @@ public class LoginFormFactory {
             
             return this;
         }
-    
+        
         public Component layout() {
             root.addComponent(panel);
             root.setComponentAlignment(panel, Alignment.MIDDLE_CENTER);
@@ -66,7 +66,7 @@ public class LoginFormFactory {
                     try {
                         Authentication auth = new UsernamePasswordAuthenticationToken(username.getValue(),
                                 password.getValue());
-                        Authentication authentication=daoAuthenticationProvider.authenticate(auth);
+                        Authentication authentication = daoAuthenticationProvider.authenticate(auth);
                         SecurityContextHolder.getContext().setAuthentication(authentication);
                         
                         UI.getCurrent().getPage().setLocation("/learn_kazakh/ui");

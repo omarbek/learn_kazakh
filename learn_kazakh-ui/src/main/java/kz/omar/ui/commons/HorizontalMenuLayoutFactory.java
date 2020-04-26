@@ -2,8 +2,17 @@ package kz.omar.ui.commons;
 
 
 import com.vaadin.server.ThemeResource;
-import com.vaadin.ui.*;
+import com.vaadin.ui.Alignment;
+import com.vaadin.ui.MenuBar;
+import com.vaadin.ui.VerticalLayout;
+import kz.omar.model.entity.Task;
+import kz.omar.model.entity.User;
+import kz.omar.service.task.TaskService;
+import kz.omar.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Omarbek.Dinassil
@@ -18,42 +27,45 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
     
     private LogoLayout logoLayout;
     
-    public HorizontalMenuLayoutFactory(){
-        logoLayout=new LogoLayout();
-    }
+    private List<Task> tasks;
     
-    public LogoLayout getLogoLayout() {
-        return logoLayout;
-    }
+    @Autowired
+    private TaskService taskService;
+    
+    @Autowired
+    private UserService userService;
     
     private class LogoLayout extends VerticalLayout {//Builder pattern
         
         private MenuBar menuBar;
         
-        public LogoLayout init() {
+        LogoLayout init() {
+            tasks = new ArrayList<>();
             menuBar = new MenuBar();
             return this;
         }
         
+        LogoLayout load() {
+            User user = userService.getCurrentUser();
+            Integer roleId = user.getRole().getRoleId();
+            tasks = taskService.getTasksWithNoParentByRoleId(roleId);
+            learnKazakhMenuFactory.setMenuParentId(tasks.get(0).getTaskId());
+            return this;
+        }
+        
         public LogoLayout layout() {
+            for (Task task: tasks) {
+                menuBar.addItem(task.getName(),
+                        new ThemeResource("../../themes/univercity/img/book.png"), new MenuBar.Command() {
+                            public void menuSelected(MenuBar.MenuItem menuItem) {
+                                learnKazakhMenuFactory.setMenuParentId(task.getTaskId());
+                                learnKazakhMenuFactory.setPath(task.getNavigatePath());
+                                learnKazakhMenuFactory.createComponent();
+                            }
+                        });
+            }
             
-            MenuBar.MenuItem sss = menuBar.addItem("sss",
-                    new ThemeResource("../../themes/univercity/img/book.png"), new MenuBar.Command() {
-                public void menuSelected(MenuBar.MenuItem menuItem) {
-                    learnKazakhMenuFactory.setMenu(menuItem.getText());
-                    learnKazakhMenuFactory.setPath("main");
-                    learnKazakhMenuFactory.createComponent();
-                }
-            });
-            MenuBar.MenuItem qwe = menuBar.addItem("qwe",
-                    new ThemeResource("../../themes/univercity/img/info.png"), new MenuBar.Command() {
-                        public void menuSelected(MenuBar.MenuItem menuItem) {
-                            learnKazakhMenuFactory.setMenu(menuItem.getText());
-                            learnKazakhMenuFactory.setPath("asd");
-                            learnKazakhMenuFactory.createComponent();
-                        }
-                    });
-            
+            removeAllComponents();
             addComponent(menuBar);
             setComponentAlignment(menuBar, Alignment.MIDDLE_CENTER);
             
@@ -63,7 +75,15 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
     }
     
     public void createComponent() {
-        logoLayout.init().layout();
+        logoLayout.init().load().layout();
+    }
+    
+    public HorizontalMenuLayoutFactory() {
+        logoLayout = new LogoLayout();
+    }
+    
+    public LogoLayout getLogoLayout() {
+        return logoLayout;
     }
     
 }

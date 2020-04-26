@@ -1,7 +1,5 @@
 package kz.omar.ui.commons;
 
-import com.vaadin.ui.Component;
-
 /**
  * @author Omarbek.Dinassil
  * on 2020-04-25

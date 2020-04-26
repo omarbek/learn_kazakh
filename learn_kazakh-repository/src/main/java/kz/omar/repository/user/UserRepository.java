@@ -1,4 +1,4 @@
-package kz.omar.repository.security;
+package kz.omar.repository.user;
 
 import kz.omar.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
     
-    @Query("select u from User u where u.username = :username")
+    @Query("select u from User u left join fetch u.role where u.username = :username")
     User findByUsername(@Param("username") String username);
     
 }
