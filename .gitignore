@@ -1,5 +1,3 @@
-target/
-.idea/
 learn_kazakh-model/src/test/
 learn_kazakh-repository/src/main/resources/
 learn_kazakh-repository/src/test/
@@ -10,3 +8,6 @@ learn_kazakh-ui/src/test/
 learn_kazakh-utils/src/
 learn_kazakh-web/src/main/resources/
 learn_kazakh-web/src/test/
+.idea/
+target/learn_kazakh.iml
+learn_kazakh.iml
