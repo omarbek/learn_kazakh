@@ -1,2 +1,12 @@
 target/
 .idea/
+learn_kazakh-model/src/test/
+learn_kazakh-repository/src/main/resources/
+learn_kazakh-repository/src/test/
+learn_kazakh-service/src/main/resources/
+learn_kazakh-service/src/test/
+learn_kazakh-ui/src/main/resources/
+learn_kazakh-ui/src/test/
+learn_kazakh-utils/src/
+learn_kazakh-web/src/main/resources/
+learn_kazakh-web/src/test/

@@ -6,56 +6,51 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecb6e7c8-2d1f-4606-95db-bd4fc29390ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/role/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/task/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/role/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/role/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/task/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/task/TaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/user/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="ecb6e7c8-2d1f-4606-95db-bd4fc29390ab" name="Default Changelist" comment="added tasks and roles">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/classes/kz/omar/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/classes/kz/omar/model/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/learn_kazakh-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/learn_kazakh-model-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/security/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/classes/kz/omar/repository/security/UserRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/learn_kazakh-repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/target/learn_kazakh-repository-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/RegisterUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/RegisterUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/classes/kz/omar/service/security/RegisterUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/classes/kz/omar/service/security/RegisterUserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/classes/kz/omar/service/security/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/learn_kazakh-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/target/learn_kazakh-service-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMenuFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMenuFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupFormFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupFormFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/META-INF/learn_kazakh-ui.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory$LogoLayout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/HorizontalMenuLayoutFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory$LearnKazakhMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory$LearnKazakhMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMenuFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory$SignupForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/login/SignupFormFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/learn_kazakh-ui-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory$LogoLayout$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory$LogoLayout$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory$LogoLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory$LogoLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/commons/LearnKazakhMainUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/main/MainLayoutFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/main/MainLayoutFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/main/QweLayoutFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-ui/target/classes/kz/omar/ui/main/QweLayoutFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-utils/target/learn_kazakh-utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-utils/target/learn_kazakh-utils-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn_kazakh-utils/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-utils/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/univercity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/univercity.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh.war" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh.war.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/VAADIN/themes/univercity/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/VAADIN/themes/univercity/project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/VAADIN/themes/univercity/univercity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/VAADIN/themes/univercity/univercity.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-model-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-repository-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-ui-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-ui-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/learn_kazakh/WEB-INF/lib/learn_kazakh-utils-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_kazakh-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/learn_kazakh-web/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,8 +88,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+            <state relative-caret-position="176">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,13 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -143,6 +147,12 @@
       <find>transactional</find>
       <find>menuid</find>
       <find>asd</find>
+      <find>v-menubar</find>
+      <find>1.8</find>
+      <find>MENUBAr</find>
+      <find>menubar</find>
+      <find>blue</find>
+      <find>project.scss</find>
     </findStrings>
     <replaceStrings>
       <replace>LearnKazakhNavigator</replace>
@@ -155,28 +165,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/java/SpringBootApplication.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/java/kz/omar/launcher/SpringBootApplication.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/java/kz/omar/launcher/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-service/pom.xml" />
         <option value="$PROJECT_DIR$/learn_kazakh-repository/pom.xml" />
-        <option value="$PROJECT_DIR$/learn_kazakh-model/pom.xml" />
         <option value="$PROJECT_DIR$/learn_kazakh-model/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/navigator/LearnKazakhNavigator.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/LoginUI.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupUI.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/LoginFormFactory.java" />
-        <option value="$PROJECT_DIR$/learn_kazakh-ui/pom.xml" />
         <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/styles/styles.css" />
         <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/themes/base/styles.css" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/main/MainLayoutFactory.java" />
-        <option value="$PROJECT_DIR$/learn_kazakh-web/pom.xml" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/main/QweLayoutFactory.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhLayoutFactory.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/UIComponentBuilder.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory.java" />
-        <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/main/AsdLayoutFactory.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/security/UserRepository.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/RegisterUserServiceImpl.java" />
@@ -202,7 +206,16 @@
         <option value="$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/task/TaskServiceImpl.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/task/TaskRepository.java" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMenuFactory.java" />
+        <option value="$PROJECT_DIR$/learn_kazakh-model/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java" />
+        <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/base/styles.css" />
+        <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/project.scss" />
         <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java" />
+        <option value="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/univercity.scss" />
+        <option value="$PROJECT_DIR$/learn_kazakh-ui/src/main/resources/VAADIN/themes/univercity/univercity.scss" />
+        <option value="$PROJECT_DIR$/learn_kazakh-web/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_kazakh-ui/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -241,6 +254,70 @@
               <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn_kazakh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_kazakh" type="462c0819:PsiDirectoryNode" />
+              <item name="learn_kazakh-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="univercity" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -251,7 +328,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587916109054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587923642816" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -259,15 +336,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/images" />
-      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN" />
+      <recent name="$PROJECT_DIR$/learn_kazakh-ui/src/main/resources/VAADIN/themes" />
       <recent name="$PROJECT_DIR$/learn_kazakh-ui/src/main/resources" />
-      <recent name="$PROJECT_DIR$/learn_kazakh-ui/src/main" />
-      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/java" />
+      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="kz.omar.model.entity" />
@@ -276,12 +353,12 @@
       <recent name="kz.omar.service.security" />
       <recent name="kz.omar.ui.login" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN" />
-      <recent name="$PROJECT_DIR$/learn_kazakh-ui/src/main/resources/VAADIN/themes" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/learn_kazakh-ui/src/main/resources" />
+      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/images" />
       <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main" />
+      <recent name="$PROJECT_DIR$/learn_kazakh-ui/src/main" />
+      <recent name="$PROJECT_DIR$/learn_kazakh-web/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,7 +374,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.14">
-    <configuration name="learn_kazakh [clean,package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="learn_kazakh [package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -308,7 +385,6 @@
             </option>
             <option name="goals">
               <list>
-                <option value="clean" />
                 <option value="package" />
               </list>
             </option>
@@ -405,7 +481,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.learn_kazakh [clean,package]" />
+      <item itemvalue="Maven.learn_kazakh [package]" />
       <item itemvalue="Spring Boot.SpringBootApplication" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.14" />
     </list>
@@ -422,7 +498,7 @@
       <updated>1587818896975</updated>
       <workItem from="1587818898684" duration="7658000" />
       <workItem from="1587837095410" duration="28212000" />
-      <workItem from="1587915883975" duration="223000" />
+      <workItem from="1587915883975" duration="6887000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore file">
       <created>1587916021663</created>
@@ -445,11 +521,32 @@
       <option name="project" value="LOCAL" />
       <updated>1587916094522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added targets">
+      <created>1587916155629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587916155629</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated gitignore">
+      <created>1587916241518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587916241518</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added tasks and roles">
+      <created>1587916713471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587916713471</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36185000" />
+    <option name="totallyTimeSpent" value="42757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,7 +559,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28755364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -474,9 +570,9 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Problems" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3554217" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.58433735" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.3554217" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39156628" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32891566" />
@@ -485,7 +581,7 @@
       <window_info anchor="bottom" id="Database Console" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5007153" side_tool="true" weight="0.3554217" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
@@ -510,7 +606,10 @@
     <MESSAGE value="added gitignore file" />
     <MESSAGE value="added target" />
     <MESSAGE value="added idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="added idea" />
+    <MESSAGE value="added targets" />
+    <MESSAGE value="updated gitignore" />
+    <MESSAGE value="added tasks and roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tasks and roles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,12 +625,6 @@
           <line>82</line>
           <properties />
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -595,219 +688,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/7.4.4/vaadin-server-7.4.4.jar!/com/vaadin/ui/Tree.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/main/QweLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/main/MainLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/book_open.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/books.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/confirm.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/employee.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/error.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/grad-light-top.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/gradient.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/book.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/card.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/clock.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/users.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/user_on.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/user_off.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/student.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/info.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/main/AsdLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/UIComponentBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/navigator/LearnKazakhNavigator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a505ee2c-a78f-44ef-9adb-acff004f30d6/schema/learn_kazakh/table/tasks">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a505ee2c-a78f-44ef-9adb-acff004f30d6/schema/learn_kazakh/table/roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a505ee2c-a78f-44ef-9adb-acff004f30d6/schema/learn_kazakh/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Column.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a505ee2c-a78f-44ef-9adb-acff004f30d6/schema/learn_kazakh/table/role_tasks">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-repository/src/main/java/kz/omar/repository/role/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/role/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/role/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/SignupFormFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/login/LoginFormFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn_kazakh-service/src/main/java/kz/omar/service/security/CustomUserDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -858,16 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,10 +823,182 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/navigator/LearnKazakhNavigator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/users.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/student.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/user_on.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/active.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/arrow_inout.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/arrow_left.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/arrow_right.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/building.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/calculator.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/cancel.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/contract.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/copy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/delete.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/deselect_all.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/docs.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/apply.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/button-sprites.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhLogoLayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2740#2741#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/img/button/exit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/base/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-model/src/main/java/kz/omar/model/entity/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/resources/VAADIN/themes/univercitys/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/printer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-434" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/addons.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/base/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25345">
+          <caret line="2683" column="21" lean-forward="true" selection-start-line="2683" selection-start-column="21" selection-end-line="2683" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/resources/VAADIN/themes/univercitys/univercity.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="468" column="24" selection-start-line="468" selection-start-column="24" selection-end-line="468" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="47" column="40" lean-forward="true" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/LearnKazakhMainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="176">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/univercity.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="468" column="1" lean-forward="true" selection-start-line="468" selection-start-column="1" selection-end-line="468" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-web/src/main/webapp/VAADIN/themes/univercity/project.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="126" column="31" lean-forward="true" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -965,18 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn_kazakh-ui/src/main/java/kz/omar/ui/commons/HorizontalMenuLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

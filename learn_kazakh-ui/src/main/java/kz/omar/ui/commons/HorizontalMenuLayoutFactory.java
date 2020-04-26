@@ -64,7 +64,27 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
                             }
                         });
             }
+    
+            MenuBar.MenuItem myProfileMI = menuBar.addItem("",
+                    new ThemeResource("../../themes/univercity/img/user_on.png"), null);
+            myProfileMI.addSeparator();
             
+            myProfileMI.addItem("My profile",
+                    new ThemeResource("../../themes/univercity/img/user_on.png"), new MenuBar.Command() {
+                        public void menuSelected(MenuBar.MenuItem menuItem) {
+                        }
+                    });
+            myProfileMI.addItem("My progress",
+                    new ThemeResource("../../themes/univercity/img/button/apply.png"), new MenuBar.Command() {
+                        public void menuSelected(MenuBar.MenuItem menuItem) {
+                        }
+                    });
+            myProfileMI.addItem("Logout",
+                    new ThemeResource("../../themes/univercity/img/button/exit.png"), new MenuBar.Command() {
+                        public void menuSelected(MenuBar.MenuItem menuItem) {
+                        }
+                    });
+    
             removeAllComponents();
             addComponent(menuBar);
             setComponentAlignment(menuBar, Alignment.MIDDLE_CENTER);

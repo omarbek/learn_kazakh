@@ -1,1 +1,3 @@
-kz/omar/repository/security/UserRepository.class
+kz/omar/repository/task/TaskRepository.class
+kz/omar/repository/role/RoleRepository.class
+kz/omar/repository/user/UserRepository.class
