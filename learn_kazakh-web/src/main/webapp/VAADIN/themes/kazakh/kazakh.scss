@@ -36,7 +36,7 @@ $v-caption-font-weight: 600;
 @import "project";
 @import "printer";
 
-@mixin univercity {
+@mixin kazakh {
   @include valo;
 
   [class*="margin-left"] > tbody > [class*="row"] > [class*="captioncell"] {

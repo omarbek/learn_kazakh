@@ -18,7 +18,7 @@ import org.springframework.context.ApplicationContext;
  */
 @SpringUI(path = LearnKazakhMainUI.NAME)
 @Title("Learn Kazakh")
-@Theme("valo")
+@Theme("kazakh")
 public class LearnKazakhMainUI extends UI {
     
     public static final String NAME = "/ui";

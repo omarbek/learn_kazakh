@@ -40,6 +40,7 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
         private MenuBar menuBar;
         
         LogoLayout init() {
+            addStyleName("blue");
             tasks = new ArrayList<>();
             menuBar = new MenuBar();
             return this;
@@ -56,7 +57,7 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
         public LogoLayout layout() {
             for (Task task: tasks) {
                 menuBar.addItem(task.getName(),
-                        new ThemeResource("../../themes/univercity/img/book.png"), new MenuBar.Command() {
+                        new ThemeResource("../../themes/kazakh/img/book.png"), new MenuBar.Command() {
                             public void menuSelected(MenuBar.MenuItem menuItem) {
                                 learnKazakhMenuFactory.setMenuParentId(task.getTaskId());
                                 learnKazakhMenuFactory.setPath(task.getNavigatePath());
@@ -66,21 +67,21 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
             }
     
             MenuBar.MenuItem myProfileMI = menuBar.addItem("",
-                    new ThemeResource("../../themes/univercity/img/user_on.png"), null);
+                    new ThemeResource("../../themes/kazakh/img/user_on.png"), null);
             myProfileMI.addSeparator();
             
             myProfileMI.addItem("My profile",
-                    new ThemeResource("../../themes/univercity/img/user_on.png"), new MenuBar.Command() {
+                    new ThemeResource("../../themes/kazakh/img/user_on.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
             myProfileMI.addItem("My progress",
-                    new ThemeResource("../../themes/univercity/img/button/apply.png"), new MenuBar.Command() {
+                    new ThemeResource("../../themes/kazakh/img/button/apply.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
             myProfileMI.addItem("Logout",
-                    new ThemeResource("../../themes/univercity/img/button/exit.png"), new MenuBar.Command() {
+                    new ThemeResource("../../themes/kazakh/img/button/exit.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
