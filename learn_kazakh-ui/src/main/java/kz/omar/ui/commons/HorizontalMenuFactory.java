@@ -64,9 +64,12 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
         public HorizontalMenuLayout layout() {
             removeAllComponents();
             
-            HorizontalLayout menuVL = new HorizontalLayout();
-            int width = tasks.size() * 15;
-            menuVL.setWidth(width + "%");
+            HorizontalLayout menuHL = new HorizontalLayout();
+            int width = tasks.size() * 12;
+            if(width>100){
+                width=100;
+            }
+            menuHL.setWidth(width + "%");
             for (Task task: tasks) {
                 Button menuButton = new Button(task.getName());
                 menuButton.addStyleName(ValoTheme.BUTTON_BORDERLESS);
@@ -78,10 +81,12 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
                 });
                 menuButton.addStyleName("qwe");
                 
-                menuVL.addComponent(menuButton);
+                menuHL.addComponent(menuButton);
+                menuHL.setComponentAlignment(menuButton,Alignment.MIDDLE_CENTER);
             }
-            addComponent(menuVL);
-            setComponentAlignment(menuVL, Alignment.MIDDLE_LEFT);
+            addComponent(menuHL);
+            setComponentAlignment(menuHL, Alignment.MIDDLE_LEFT);
+            setExpandRatio(menuHL,4);
             
             MenuBar.MenuItem myProfileMI = menuBar.addItem("",
                     new ThemeResource("../../themes/kazakh/img/user_on.png"), null);
@@ -112,6 +117,7 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
             
             addComponent(menuBar);
             setComponentAlignment(menuBar, Alignment.MIDDLE_RIGHT);
+            setExpandRatio(menuBar,1);
             
             return this;
         }

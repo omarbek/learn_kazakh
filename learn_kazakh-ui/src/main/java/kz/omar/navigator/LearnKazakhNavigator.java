@@ -24,9 +24,9 @@ public class LearnKazakhNavigator extends Navigator {
     
     public static void navigate(String path) {
         try {
-            LearnKazakhNavigator.getNavigator().navigateTo(path);
-        } catch (Exception e) {
-            e.printStackTrace();
+            LearnKazakhNavigator navigator = LearnKazakhNavigator.getNavigator();
+            navigator.navigateTo(path);
+        } catch (Exception ignored) {
         }
     }
     
@@ -34,8 +34,9 @@ public class LearnKazakhNavigator extends Navigator {
     public void navigateTo(String viewName) {
         if (viewName == null) {
             super.navigateTo(NotReadyLayoutFactory.NAME);
+        } else {
+            super.navigateTo(viewName);
         }
-        super.navigateTo(viewName);
     }
     
 }
