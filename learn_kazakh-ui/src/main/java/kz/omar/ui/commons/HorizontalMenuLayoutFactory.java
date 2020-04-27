@@ -2,14 +2,14 @@ package kz.omar.ui.commons;
 
 
 import com.vaadin.server.ThemeResource;
-import com.vaadin.ui.Alignment;
-import com.vaadin.ui.MenuBar;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.*;
+import com.vaadin.ui.themes.ValoTheme;
 import kz.omar.model.entity.Task;
 import kz.omar.model.entity.User;
 import kz.omar.service.task.TaskService;
 import kz.omar.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +23,9 @@ import java.util.List;
 public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
     
     @Autowired
-    private LearnKazakhMenuFactory learnKazakhMenuFactory;
+    private VerticalMenuFactory learnKazakhMenuFactory;
     
-    private LogoLayout logoLayout;
+    private HorizontalMenuLayout horizontalMenuLayout;
     
     private List<Task> tasks;
     
@@ -35,17 +35,25 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
     @Autowired
     private UserService userService;
     
-    private class LogoLayout extends VerticalLayout {//Builder pattern
+    private class HorizontalMenuLayout extends HorizontalLayout {//Builder pattern
         
         private MenuBar menuBar;
         
-        LogoLayout init() {
+        HorizontalMenuLayout init() {
+            setWidth("100%");
+            setHeightUndefined();
+            setMargin(true);
+            addStyleName("horizontal-menu");
+            
             tasks = new ArrayList<>();
+            
             menuBar = new MenuBar();
+            menuBar.setHeight("32px");
+            
             return this;
         }
         
-        LogoLayout load() {
+        HorizontalMenuLayout load() {
             User user = userService.getCurrentUser();
             Integer roleId = user.getRole().getRoleId();
             tasks = taskService.getTasksWithNoParentByRoleId(roleId);
@@ -53,41 +61,57 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
             return this;
         }
         
-        public LogoLayout layout() {
+        public HorizontalMenuLayout layout() {
+            removeAllComponents();
+            
+            HorizontalLayout menuVL = new HorizontalLayout();
+            int width = tasks.size() * 15;
+            menuVL.setWidth(width + "%");
             for (Task task: tasks) {
-                menuBar.addItem(task.getName(),
-                        new ThemeResource("../../themes/kazakh/img/book.png"), new MenuBar.Command() {
-                            public void menuSelected(MenuBar.MenuItem menuItem) {
-                                learnKazakhMenuFactory.setMenuParentId(task.getTaskId());
-                                learnKazakhMenuFactory.setPath(task.getNavigatePath());
-                                learnKazakhMenuFactory.createComponent();
-                            }
-                        });
+                Button menuButton = new Button(task.getName());
+                menuButton.addStyleName(ValoTheme.BUTTON_BORDERLESS);
+                //                menuButton.setIcon(new ThemeResource("../../themes/kazakh/img/book.png"));
+                menuButton.addClickListener((Button.ClickEvent event) -> {
+                    learnKazakhMenuFactory.setMenuParentId(task.getTaskId());
+                    learnKazakhMenuFactory.setPath(task.getNavigatePath());
+                    learnKazakhMenuFactory.createComponent();
+                });
+                menuButton.addStyleName("qwe");
+                
+                menuVL.addComponent(menuButton);
             }
-    
+            addComponent(menuVL);
+            setComponentAlignment(menuVL, Alignment.MIDDLE_LEFT);
+            
             MenuBar.MenuItem myProfileMI = menuBar.addItem("",
                     new ThemeResource("../../themes/kazakh/img/user_on.png"), null);
             myProfileMI.addSeparator();
             
-            myProfileMI.addItem("My profile",
+            myProfileMI.addItem("Мой профиль",
                     new ThemeResource("../../themes/kazakh/img/user_on.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
-            myProfileMI.addItem("My progress",
+            myProfileMI.addItem("Mой прогресс",
                     new ThemeResource("../../themes/kazakh/img/button/apply.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
-            myProfileMI.addItem("Logout",
-                    new ThemeResource("../../themes/kazakh/img/button/exit.png"), new MenuBar.Command() {
+            myProfileMI.addItem("Mой словарь",
+                    new ThemeResource("../../themes/kazakh/img/book.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
-    
-            removeAllComponents();
+            myProfileMI.addItem("Выйти",
+                    new ThemeResource("../../themes/kazakh/img/button/exit.png"), new MenuBar.Command() {
+                        public void menuSelected(MenuBar.MenuItem menuItem) {
+                            SecurityContextHolder.clearContext();
+                            UI.getCurrent().getPage().setLocation("/learn_kazakh/login");
+                        }
+                    });
+            
             addComponent(menuBar);
-            setComponentAlignment(menuBar, Alignment.MIDDLE_CENTER);
+            setComponentAlignment(menuBar, Alignment.MIDDLE_RIGHT);
             
             return this;
         }
@@ -95,15 +119,15 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
     }
     
     public void createComponent() {
-        logoLayout.init().load().layout();
+        horizontalMenuLayout.init().load().layout();
     }
     
     public HorizontalMenuLayoutFactory() {
-        logoLayout = new LogoLayout();
+        horizontalMenuLayout = new HorizontalMenuLayout();
     }
     
-    public LogoLayout getLogoLayout() {
-        return logoLayout;
+    public HorizontalMenuLayout getHorizontalMenuLayout() {
+        return horizontalMenuLayout;
     }
     
 }

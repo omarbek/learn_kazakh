@@ -13825,3 +13825,36 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 /*add here css*/
+
+.kazakh .v-verticallayout-horizontal-menu {
+	margin-top: 7px;
+}
+
+.kazakh .v-button-qwe {
+	/*border: none;*/
+	/*background: none;*/
+	/*color: #404040 !important;*/
+	/*font-weight: 100;*/
+	/*padding: 20px;*/
+	/*text-transform: uppercase;*/
+	/*border-radius: 6px;*/
+	/*display: inline-block;*/
+	/*transition: all 0.3s ease 0s;*/
+}
+
+.kazakh .v-button-qwe:hover {
+	color: #ffffff !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	border-radius: 16px;
+	background: #ccd4dc;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
+.kazakh .v-button-qwe:focus {
+	background-color: #28c38a;
+	border-radius: 16px;
+	color: #ffffff !important;
+}

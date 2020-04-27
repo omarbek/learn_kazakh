@@ -23,13 +23,13 @@ public class LearnKazakhMainUI extends UI {
     
     public static final String NAME = "/ui";
     
-    private Panel changeTab = new Panel();
+    private Panel changePanel = new Panel();
     
     @Autowired
-    private HorizontalMenuLayoutFactory horizontalMenu;//DI
+    private HorizontalMenuLayoutFactory horizontalMenuLayoutFactory;//DI
     
     @Autowired
-    private LearnKazakhMenuFactory learnKazakhMenuFactory;
+    private VerticalMenuFactory verticalMenuFactory;
     
     @Autowired
     private ApplicationContext applicationContext;
@@ -38,46 +38,46 @@ public class LearnKazakhMainUI extends UI {
     private SpringViewProvider springViewProvider;
     
     protected void init(VaadinRequest vaadinRequest) {
-        changeTab.setHeight("100%");
-        
         VerticalLayout rootLayout = new VerticalLayout();
         rootLayout.setSizeFull();
         rootLayout.setMargin(true);
+    
+        Panel horMenuPanel = new Panel();
+        horMenuPanel.setWidth("100%");
+        horMenuPanel.setHeight("64px");
+    
+        horizontalMenuLayoutFactory.createComponent();
+        Component horizontalMenuComponent = horizontalMenuLayoutFactory.getHorizontalMenuLayout();//Builder pattern
         
-        Panel contentPanel = new Panel();
-        contentPanel.setWidth("75%");
-        contentPanel.setHeight("100%");
+        horMenuPanel.setContent(horizontalMenuComponent);
         
-        Panel logoPanel = new Panel();
-        logoPanel.setWidth("75%");
-        logoPanel.setHeightUndefined();
+        rootLayout.addComponent(horMenuPanel);
+        rootLayout.setComponentAlignment(horMenuPanel, Alignment.TOP_CENTER);
         
-        HorizontalLayout uiLayout = new HorizontalLayout();
-        uiLayout.setSizeFull();
-        uiLayout.setMargin(true);
+        Panel bottomPanel = new Panel();
+        bottomPanel.setWidth("100%");
+        bottomPanel.setHeight("100%");
         
-        horizontalMenu.createComponent();
-        learnKazakhMenuFactory.createComponent();
-        Component horizontalMenuComponent = horizontalMenu.getLogoLayout();//Builder pattern
-        Component menu = learnKazakhMenuFactory.getLearnKazakhMenu();
+        HorizontalLayout bottomHL = new HorizontalLayout();
+        bottomHL.setSizeFull();
+        bottomHL.setMargin(true);
         
-        uiLayout.addComponent(menu);
-        uiLayout.addComponent(changeTab);
+        verticalMenuFactory.createComponent();
+        Component verticalMenuComponent = verticalMenuFactory.getVerticalMenu();
+        bottomHL.addComponent(verticalMenuComponent);
+        bottomHL.setComponentAlignment(verticalMenuComponent, Alignment.TOP_CENTER);
+        bottomHL.setExpandRatio(verticalMenuComponent, 1);
+    
+        changePanel.setHeight("100%");
+        bottomHL.addComponent(changePanel);
+        bottomHL.setComponentAlignment(changePanel, Alignment.TOP_CENTER);
+        bottomHL.setExpandRatio(changePanel, 2);
         
-        uiLayout.setComponentAlignment(changeTab, Alignment.TOP_CENTER);
-        uiLayout.setComponentAlignment(menu, Alignment.TOP_CENTER);
+        bottomPanel.setContent(bottomHL);
         
-        uiLayout.setExpandRatio(menu, 1);
-        uiLayout.setExpandRatio(changeTab, 2);
-        
-        logoPanel.setContent(horizontalMenuComponent);
-        contentPanel.setContent(uiLayout);
-        
-        rootLayout.addComponent(logoPanel);
-        rootLayout.addComponent(contentPanel);
-        rootLayout.setComponentAlignment(contentPanel, Alignment.MIDDLE_CENTER);
-        rootLayout.setComponentAlignment(logoPanel, Alignment.TOP_CENTER);
-        rootLayout.setExpandRatio(contentPanel, 1);
+        rootLayout.addComponent(bottomPanel);
+        rootLayout.setComponentAlignment(bottomPanel, Alignment.MIDDLE_CENTER);
+        rootLayout.setExpandRatio(bottomPanel, 1);
         
         initNavigator();
         
@@ -85,7 +85,7 @@ public class LearnKazakhMainUI extends UI {
     }
     
     private void initNavigator() {
-        LearnKazakhNavigator navigator = new LearnKazakhNavigator(this, changeTab);
+        LearnKazakhNavigator navigator = new LearnKazakhNavigator(this, changePanel);
         applicationContext.getAutowireCapableBeanFactory().autowireBean(navigator);
         navigator.addProvider(springViewProvider);
         navigator.navigateTo(MainLayoutFactory.NAME);
