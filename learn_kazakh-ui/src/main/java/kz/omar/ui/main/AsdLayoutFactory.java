@@ -15,7 +15,7 @@ import kz.omar.ui.commons.LearnKazakhMainUI;
 @SpringView(name = AsdLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
 public class AsdLayoutFactory extends VerticalLayout implements View {
     
-    public static final String NAME = "asd";
+    public static final String NAME = "цитаты";
     
     private void addLayout() {
         setMargin(true);

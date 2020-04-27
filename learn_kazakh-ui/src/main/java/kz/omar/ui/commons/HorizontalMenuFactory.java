@@ -20,7 +20,7 @@ import java.util.List;
  * @project learn_kazakh
  */
 @org.springframework.stereotype.Component
-public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
+public class HorizontalMenuFactory implements UIComponentBuilder {
     
     @Autowired
     private VerticalMenuFactory learnKazakhMenuFactory;
@@ -122,7 +122,7 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
         horizontalMenuLayout.init().load().layout();
     }
     
-    public HorizontalMenuLayoutFactory() {
+    public HorizontalMenuFactory() {
         horizontalMenuLayout = new HorizontalMenuLayout();
     }
     

@@ -17,14 +17,12 @@ import java.util.List;
 public interface TaskRepository extends JpaRepository<Task, Integer> {
     
     @Query("select t from Task t" +
-            " join t.roles r" +
-            " where r.roleId = :roleId" +
+            " where t.role.id = :roleId" +
             " and t.parent is null")
     List<Task> getTasksWithNoParentByRoleId(@Param("roleId") Integer roleId);
     
     @Query("select t from Task t" +
-            " join t.roles r" +
-            " where r.roleId = :roleId" +
+            " where t.role.id = :roleId" +
             " and t.parent.id = :parentId")
     List<Task> getTasksByParentId(@Param("roleId") Integer roleId, @Param("parentId") Integer parentId);
     

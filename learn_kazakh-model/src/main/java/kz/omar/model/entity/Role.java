@@ -23,9 +23,6 @@ public class Role {
     @NotNull(message = "Name must not be null")
     private String name;
     
-    @ManyToMany(mappedBy = "roles", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Task> tasks = new ArrayList<>();
-    
     public Integer getRoleId() {
         return roleId;
     }
@@ -45,18 +42,6 @@ public class Role {
     @Override
     public String toString() {
         return name;
-    }
-    
-    public List<Task> getTasks() {
-        return tasks;
-    }
-    
-    public void setTasks(List<Task> tasks) {
-        this.tasks = tasks;
-    }
-    
-    public void assignTaskToRole(Task task) {
-        this.tasks.add(task);
     }
     
 }

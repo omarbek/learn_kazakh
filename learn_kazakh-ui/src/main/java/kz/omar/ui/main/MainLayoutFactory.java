@@ -17,7 +17,7 @@ import kz.omar.ui.commons.LearnKazakhMainUI;
 @SpringView(name = MainLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
 public class MainLayoutFactory extends VerticalLayout implements View {
     
-    public static final String NAME = "main";
+    public static final String NAME = "главная";
     
     private void addLayout() {
         setMargin(true);

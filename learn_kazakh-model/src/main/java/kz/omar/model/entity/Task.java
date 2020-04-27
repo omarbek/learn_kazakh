@@ -30,11 +30,9 @@ public class Task {
     @Column(name = "navigate_path")
     private String navigatePath;
     
-    @ManyToMany
-    @JoinTable(name = "role_tasks",
-            joinColumns = @JoinColumn(name = "taskId"),
-            inverseJoinColumns = @JoinColumn(name = "roleId"))
-    private List<Role> roles = new ArrayList<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "role_id")
+    private Role role;
     
     public int getTaskId() {
         return taskId;
@@ -73,16 +71,12 @@ public class Task {
         return name;
     }
     
-    public List<Role> getRoles() {
-        return roles;
+    public Role getRole() {
+        return role;
     }
     
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
-    }
-    
-    public void assignRoleToTask(Role role) {
-        this.roles.add(role);
+    public void setRole(Role role) {
+        this.role = role;
     }
     
 }

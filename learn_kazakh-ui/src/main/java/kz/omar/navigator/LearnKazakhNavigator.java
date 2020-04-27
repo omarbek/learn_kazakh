@@ -1,9 +1,9 @@
 package kz.omar.navigator;
 
-import com.google.gwt.thirdparty.guava.common.base.Strings;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.ui.SingleComponentContainer;
 import com.vaadin.ui.UI;
+import kz.omar.ui.commons.NotReadyLayoutFactory;
 
 /**
  * @author Omarbek.Dinassil
@@ -26,13 +26,16 @@ public class LearnKazakhNavigator extends Navigator {
         try {
             LearnKazakhNavigator.getNavigator().navigateTo(path);
         } catch (Exception e) {
-            return;
+            e.printStackTrace();
         }
     }
     
     @Override
     public void navigateTo(String viewName) {
-        super.navigateTo(Strings.nullToEmpty(viewName));
+        if (viewName == null) {
+            super.navigateTo(NotReadyLayoutFactory.NAME);
+        }
+        super.navigateTo(viewName);
     }
     
 }

@@ -26,7 +26,7 @@ public class LearnKazakhMainUI extends UI {
     private Panel changePanel = new Panel();
     
     @Autowired
-    private HorizontalMenuLayoutFactory horizontalMenuLayoutFactory;//DI
+    private HorizontalMenuFactory horizontalMenuFactory;//DI
     
     @Autowired
     private VerticalMenuFactory verticalMenuFactory;
@@ -46,8 +46,8 @@ public class LearnKazakhMainUI extends UI {
         horMenuPanel.setWidth("100%");
         horMenuPanel.setHeight("64px");
     
-        horizontalMenuLayoutFactory.createComponent();
-        Component horizontalMenuComponent = horizontalMenuLayoutFactory.getHorizontalMenuLayout();//Builder pattern
+        horizontalMenuFactory.createComponent();
+        Component horizontalMenuComponent = horizontalMenuFactory.getHorizontalMenuLayout();//Builder pattern
         
         horMenuPanel.setContent(horizontalMenuComponent);
         
@@ -71,7 +71,7 @@ public class LearnKazakhMainUI extends UI {
         changePanel.setHeight("100%");
         bottomHL.addComponent(changePanel);
         bottomHL.setComponentAlignment(changePanel, Alignment.TOP_CENTER);
-        bottomHL.setExpandRatio(changePanel, 2);
+        bottomHL.setExpandRatio(changePanel, 4);
         
         bottomPanel.setContent(bottomHL);
         
