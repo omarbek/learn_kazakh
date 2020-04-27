@@ -40,7 +40,6 @@ public class HorizontalMenuLayoutFactory implements UIComponentBuilder {
         private MenuBar menuBar;
         
         LogoLayout init() {
-            addStyleName("blue");
             tasks = new ArrayList<>();
             menuBar = new MenuBar();
             return this;

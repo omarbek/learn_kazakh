@@ -7594,8 +7594,8 @@ div.v-layout.v-horizontal.v-widget {
 	border-top-color: #c5c5c5;
 	border-bottom-color: #bcbcbc;
 	background-color: #fafafa;
-	background-image: -webkit-linear-gradient(top, #fafafa 2%, #efefef 98%);
-	background-image: linear-gradient(to bottom,#fafafa 2%, #efefef 98%);
+	/*background-image: -webkit-linear-gradient(top, #fafafa 2%, #efefef 98%);*/
+	/*background-image: linear-gradient(to bottom,#fafafa 2%, #efefef 98%);*/
 	-webkit-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #e7e7e7, 0 2px 3px rgba(0, 0, 0, 0.05);
 	box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #e7e7e7, 0 2px 3px rgba(0, 0, 0, 0.05);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
@@ -13823,3 +13823,5 @@ div.v-layout.v-horizontal.v-widget {
 .kazakh .v-select-optiongroup-horizontal .v-select-option.v-radiobutton {
 	padding-right: 10px;
 }
+
+/*add here css*/
