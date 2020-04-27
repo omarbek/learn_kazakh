@@ -40,13 +40,13 @@ public class LearnKazakhMainUI extends UI {
     protected void init(VaadinRequest vaadinRequest) {
         VerticalLayout rootLayout = new VerticalLayout();
         rootLayout.setSizeFull();
-//        rootLayout.setMargin(true);
+        //        rootLayout.setMargin(true);
         rootLayout.addStyleName("with-image");
-    
+        
         Panel horMenuPanel = new Panel();
         horMenuPanel.setWidth("100%");
         horMenuPanel.setHeight("64px");
-    
+        
         horizontalMenuFactory.createComponent();
         Component horizontalMenuComponent = horizontalMenuFactory.getHorizontalMenuLayout();//Builder pattern
         
@@ -69,7 +69,7 @@ public class LearnKazakhMainUI extends UI {
         bottomHL.addComponent(verticalMenuComponent);
         bottomHL.setComponentAlignment(verticalMenuComponent, Alignment.TOP_CENTER);
         bottomHL.setExpandRatio(verticalMenuComponent, 1);
-    
+        
         changePanel.setHeight("100%");
         changePanel.addStyleName("no-color");
         bottomHL.addComponent(changePanel);

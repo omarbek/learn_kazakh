@@ -2,7 +2,6 @@ package kz.omar.ui.commons;
 
 import com.vaadin.data.Property;
 import com.vaadin.ui.Tree;
-import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import kz.omar.model.entity.Task;
 import kz.omar.model.entity.User;
@@ -10,7 +9,6 @@ import kz.omar.navigator.LearnKazakhNavigator;
 import kz.omar.service.task.TaskService;
 import kz.omar.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.util.List;
 
