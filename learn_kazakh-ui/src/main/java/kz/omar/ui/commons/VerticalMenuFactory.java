@@ -1,6 +1,8 @@
 package kz.omar.ui.commons;
 
 import com.vaadin.data.Property;
+import com.vaadin.server.ThemeResource;
+import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Tree;
 import com.vaadin.ui.VerticalLayout;
 import kz.omar.model.entity.Task;
@@ -43,6 +45,12 @@ public class VerticalMenuFactory implements UIComponentBuilder {
         VerticalMenu init() {
             mainMenu = new Tree();
             mainMenu.addValueChangeListener(this);
+            mainMenu.setItemStyleGenerator(new Tree.ItemStyleGenerator() {
+                @Override
+                public String getStyle(Tree tree, Object o) {
+                    return "vertical-menu";
+                }
+            });
             return this;
         }
         
@@ -62,9 +70,14 @@ public class VerticalMenuFactory implements UIComponentBuilder {
                 mainMenu.addItem(taskName);
                 mainMenu.expandItem(taskName);
                 mainMenu.setChildrenAllowed(taskName, false);
+                String icon = task.getIconPath();
+                if (icon != null) {
+                    mainMenu.setItemIcon(taskName, new ThemeResource("../../themes/" + icon));
+                }
             }
             
             addComponent(mainMenu);
+            setComponentAlignment(mainMenu, Alignment.MIDDLE_CENTER);
             
             return this;
         }

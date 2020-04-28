@@ -13830,7 +13830,7 @@ div.v-layout.v-horizontal.v-widget {
 	margin-top: 7px;
 }
 
-.kazakh .v-button-qwe {
+.kazakh .v-button-menu {
 	font-weight: 600;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -13838,7 +13838,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: all 0.3s ease 0s;
 }
 
-.kazakh .v-button-qwe:hover {
+.kazakh .v-button-menu:hover {
 	color: #ffffff !important;
 	font-weight: 700 !important;
 	letter-spacing: 3px;
@@ -13849,18 +13849,35 @@ div.v-layout.v-horizontal.v-widget {
 	transition: all 0.3s ease 0s;
 }
 
-.kazakh .v-button-qwe:focus {
+.kazakh .v-button-menu:focus {
 	background-color: blueviolet;
 	border-radius: 16px;
 	color: #ffffff !important;
 }
 
 .kazakh .v-verticallayout-with-image {
-	background-image: url(img/bg.jpg);
+	background-image: url(img/others/bg.jpg);
 	background-size: 100% 100%;
 }
 
 .kazakh .v-panel-no-color {
     background: transparent;
     border: none;
+}
+
+.kazakh .v-tree-node-vertical-menu {
+    height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kazakh .v-tree-node-vertical-menu:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }

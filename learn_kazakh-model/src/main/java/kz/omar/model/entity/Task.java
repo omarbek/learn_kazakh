@@ -28,6 +28,9 @@ public class Task {
     @Column(name = "navigate_path")
     private String navigatePath;
     
+    @Column(name = "icon_path")
+    private String iconPath;
+    
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id")
     private Role role;
@@ -77,4 +80,11 @@ public class Task {
         this.role = role;
     }
     
+    public String getIconPath() {
+        return iconPath;
+    }
+    
+    public void setIconPath(String iconPath) {
+        this.iconPath = iconPath;
+    }
 }

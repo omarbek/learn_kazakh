@@ -35,7 +35,11 @@ public class LearnKazakhNavigator extends Navigator {
         if (viewName == null) {
             super.navigateTo(NotReadyLayoutFactory.NAME);
         } else {
-            super.navigateTo(viewName);
+            try {
+                super.navigateTo(viewName);
+            } catch (Exception e) {
+                super.navigateTo(NotReadyLayoutFactory.NAME);
+            }
         }
     }
     

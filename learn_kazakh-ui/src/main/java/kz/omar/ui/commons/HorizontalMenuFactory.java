@@ -80,7 +80,7 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
                     learnKazakhMenuFactory.setPath(task.getNavigatePath());
                     learnKazakhMenuFactory.createComponent();
                 });
-                menuButton.addStyleName("qwe");
+                menuButton.addStyleName("menu");
                 
                 menuHL.addComponent(menuButton);
                 menuHL.setComponentAlignment(menuButton, Alignment.MIDDLE_CENTER);
@@ -90,11 +90,11 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
             setExpandRatio(menuHL, 4);
             
             MenuBar.MenuItem myProfileMI = menuBar.addItem("",
-                    new ThemeResource("../../themes/kazakh/img/user_on.png"), null);
+                    new ThemeResource("../../themes/kazakh/img/others/user_on.png"), null);
             myProfileMI.addSeparator();
             
             myProfileMI.addItem("Мой профиль",
-                    new ThemeResource("../../themes/kazakh/img/user_on.png"), new MenuBar.Command() {
+                    new ThemeResource("../../themes/kazakh/img/others/user_on.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
@@ -104,7 +104,7 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
                         }
                     });
             myProfileMI.addItem("Mой словарь",
-                    new ThemeResource("../../themes/kazakh/img/book.png"), new MenuBar.Command() {
+                    new ThemeResource("../../themes/kazakh/img/others/book.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
