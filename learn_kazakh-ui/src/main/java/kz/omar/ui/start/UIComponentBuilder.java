@@ -1,4 +1,4 @@
-package kz.omar.ui.commons;
+package kz.omar.ui.start;
 
 /**
  * @author Omarbek.Dinassil

@@ -8,6 +8,7 @@ import kz.omar.model.entity.User;
 import kz.omar.navigator.LearnKazakhNavigator;
 import kz.omar.service.task.TaskService;
 import kz.omar.service.user.UserService;
+import kz.omar.ui.start.UIComponentBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

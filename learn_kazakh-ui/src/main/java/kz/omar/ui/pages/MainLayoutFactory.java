@@ -1,4 +1,4 @@
-package kz.omar.ui.main;
+package kz.omar.ui.pages;
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
@@ -7,7 +7,7 @@ import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.Embedded;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
-import kz.omar.ui.commons.LearnKazakhMainUI;
+import kz.omar.ui.start.LearnKazakhMainUI;
 
 /**
  * @author Omarbek.Dinassil

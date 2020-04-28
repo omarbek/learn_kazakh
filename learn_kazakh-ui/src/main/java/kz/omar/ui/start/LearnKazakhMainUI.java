@@ -1,4 +1,4 @@
-package kz.omar.ui.commons;
+package kz.omar.ui.start;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
@@ -7,7 +7,9 @@ import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
 import com.vaadin.ui.*;
 import kz.omar.navigator.LearnKazakhNavigator;
-import kz.omar.ui.main.MainLayoutFactory;
+import kz.omar.ui.commons.HorizontalMenuFactory;
+import kz.omar.ui.commons.VerticalMenuFactory;
+import kz.omar.ui.pages.MainLayoutFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
