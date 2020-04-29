@@ -13856,7 +13856,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .kazakh .v-verticallayout-with-image {
-	background-image: url(img/others/bg.jpg);
+	background-image: url(img/background/bg.jpg);
 	background-size: 100% 100%;
 }
 
@@ -13880,4 +13880,10 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 	transition: all 0.4s ease 0s;
+}
+
+.kazakh .v-label-main-page {
+	text-align: center;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
 }
