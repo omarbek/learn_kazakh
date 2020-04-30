@@ -13856,7 +13856,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .kazakh .v-verticallayout-with-image {
-	background-image: url(img/background/bg.jpg);
+	background-image: url(/learn_kazakh/VAADIN/images/pages/main/background.jpg);
 	background-size: 100% 100%;
 }
 

@@ -90,26 +90,26 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
             setExpandRatio(menuHL, 4);
             
             MenuBar.MenuItem myProfileMI = menuBar.addItem("",
-                    new ThemeResource("../../themes/kazakh/img/others/user_on.png"), null);
+                    new ThemeResource("../../images/others/user_on.png"), null);
             myProfileMI.addSeparator();
             
             myProfileMI.addItem("Мой профиль",
-                    new ThemeResource("../../themes/kazakh/img/others/user_on.png"), new MenuBar.Command() {
+                    new ThemeResource("../../images/others/user_on.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
             myProfileMI.addItem("Mой прогресс",
-                    new ThemeResource("../../themes/kazakh/img/button/apply.png"), new MenuBar.Command() {
+                    new ThemeResource("../../images/others/apply.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
             myProfileMI.addItem("Mой словарь",
-                    new ThemeResource("../../themes/kazakh/img/others/book.png"), new MenuBar.Command() {
+                    new ThemeResource("../../images/others/book.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
             myProfileMI.addItem("Выйти",
-                    new ThemeResource("../../themes/kazakh/img/button/exit.png"), new MenuBar.Command() {
+                    new ThemeResource("../../images/others/exit.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                             SecurityContextHolder.clearContext();
                             UI.getCurrent().getPage().setLocation("/learn_kazakh/login");

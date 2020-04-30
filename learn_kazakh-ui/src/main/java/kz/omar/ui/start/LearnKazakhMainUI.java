@@ -7,6 +7,7 @@ import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
 import com.vaadin.ui.*;
 import kz.omar.navigator.LearnKazakhNavigator;
+import kz.omar.ui.commons.FooterFactory;
 import kz.omar.ui.commons.HorizontalMenuFactory;
 import kz.omar.ui.commons.VerticalMenuFactory;
 import kz.omar.ui.pages.MainLayoutFactory;
@@ -39,9 +40,12 @@ public class LearnKazakhMainUI extends UI {
     @Autowired
     private SpringViewProvider springViewProvider;
     
+    @Autowired
+    private FooterFactory footerFactory;
+    
     protected void init(VaadinRequest vaadinRequest) {
         VerticalLayout rootLayout = new VerticalLayout();
-        rootLayout.setSizeFull();
+//        rootLayout.setSizeFull();
         //        rootLayout.setMargin(true);
         rootLayout.addStyleName("with-image");
         
@@ -56,6 +60,7 @@ public class LearnKazakhMainUI extends UI {
         
         rootLayout.addComponent(horMenuPanel);
         rootLayout.setComponentAlignment(horMenuPanel, Alignment.TOP_CENTER);
+//        rootLayout.setExpandRatio(horMenuPanel, 1);
         
         Panel bottomPanel = new Panel();
         bottomPanel.setWidth("100%");
@@ -81,8 +86,18 @@ public class LearnKazakhMainUI extends UI {
         bottomPanel.setContent(bottomHL);
         
         rootLayout.addComponent(bottomPanel);
-        rootLayout.setComponentAlignment(bottomPanel, Alignment.MIDDLE_CENTER);
-        rootLayout.setExpandRatio(bottomPanel, 1);
+        rootLayout.setComponentAlignment(bottomPanel, Alignment.TOP_CENTER);
+        rootLayout.setExpandRatio(bottomPanel, 5);
+        
+        Panel footerPanel = new Panel();
+        footerPanel.setSizeFull();
+        
+        footerFactory.createComponent();
+        Component footerMenuLayout = footerFactory.getFooterMenuLayout();
+        footerPanel.setContent(footerMenuLayout);
+        
+        rootLayout.addComponent(footerPanel);
+        rootLayout.setExpandRatio(footerPanel, 1);
         
         initNavigator();
         

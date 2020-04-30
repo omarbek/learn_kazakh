@@ -72,7 +72,7 @@ public class VerticalMenuFactory implements UIComponentBuilder {
                 mainMenu.setChildrenAllowed(taskName, false);
                 String icon = task.getIconPath();
                 if (icon != null) {
-                    mainMenu.setItemIcon(taskName, new ThemeResource("../../themes/" + icon));
+                    mainMenu.setItemIcon(taskName, new ThemeResource("../../images/" + icon));
                 }
             }
             
