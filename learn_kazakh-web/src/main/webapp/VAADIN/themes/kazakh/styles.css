@@ -13887,3 +13887,15 @@ div.v-layout.v-horizontal.v-widget {
 	font-size: 17px;
 	font-family: "Courier New", Courier, monospace;
 }
+
+.kazakh .v-label-footer {
+	font-size: 20px;
+}
+
+.kazakh .v-panel-footer-about {
+	background: #bf80ff;
+}
+
+.kazakh .v-panel-footer-copyright {
+	background: #ad33ff;
+}

@@ -18,7 +18,8 @@ public interface TaskRepository extends JpaRepository<Task, Integer> {
     
     @Query("select t from Task t" +
             " where t.role.id = :roleId" +
-            " and t.parent is null")
+            " and t.parent is null" +
+            " or t.common = 1")
     List<Task> getTasksWithNoParentByRoleId(@Param("roleId") Integer roleId);
     
     @Query("select t from Task t" +
@@ -26,4 +27,6 @@ public interface TaskRepository extends JpaRepository<Task, Integer> {
             " and t.parent.id = :parentId")
     List<Task> getTasksByParentId(@Param("roleId") Integer roleId, @Param("parentId") Integer parentId);
     
+    @Query("select t from Task t where t.common = 1")
+    List<Task> getCommonTasks();
 }

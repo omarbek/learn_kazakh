@@ -35,6 +35,9 @@ public class Task {
     @JoinColumn(name = "role_id")
     private Role role;
     
+    @Column(name = "common", nullable = false, columnDefinition = "boolean default false")
+    private boolean common;
+    
     public int getTaskId() {
         return taskId;
     }
@@ -86,5 +89,13 @@ public class Task {
     
     public void setIconPath(String iconPath) {
         this.iconPath = iconPath;
+    }
+    
+    public boolean isCommon() {
+        return common;
+    }
+    
+    public void setCommon(boolean common) {
+        this.common = common;
     }
 }

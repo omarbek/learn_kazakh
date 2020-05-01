@@ -20,6 +20,9 @@ public class TaskServiceImpl implements TaskService {
     
     @Override
     public List<Task> getTasksWithNoParentByRoleId(Integer roleId) {
+        if(roleId==null){
+            return taskRepository.getCommonTasks();
+        }
         return taskRepository.getTasksWithNoParentByRoleId(roleId);
     }
     
