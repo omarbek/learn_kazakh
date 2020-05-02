@@ -6,6 +6,7 @@ import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
+import kz.omar.ui.pages.common.PageLayout;
 import kz.omar.ui.start.LearnKazakhMainUI;
 
 /**
@@ -14,11 +15,16 @@ import kz.omar.ui.start.LearnKazakhMainUI;
  * @project learn_kazakh
  */
 @SpringView(name = MainLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class MainLayoutFactory extends VerticalLayout implements View {
+public class MainLayoutFactory extends PageLayout {
     
     public static final String NAME = "главная";
     
-    private void addLayout() {
+    MainLayoutFactory(){
+        super(NAME);
+    }
+    
+    @Override
+    public void addLayout() {
         setMargin(true);
         setWidth("100%");
         
@@ -106,11 +112,6 @@ public class MainLayoutFactory extends VerticalLayout implements View {
         dragonsHL.addComponent(arrow);
         dragonsHL.setComponentAlignment(arrow,Alignment.MIDDLE_CENTER);
         dragonsHL.setExpandRatio(arrow,1);
-    }
-    
-    public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
-        removeAllComponents();
-        addLayout();
     }
     
 }

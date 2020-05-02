@@ -6,6 +6,7 @@ import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
+import kz.omar.ui.pages.common.PageLayout;
 import kz.omar.ui.start.LearnKazakhMainUI;
 
 /**
@@ -14,22 +15,22 @@ import kz.omar.ui.start.LearnKazakhMainUI;
  * @project learn_kazakh
  */
 @SpringView(name = QweLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class QweLayoutFactory extends VerticalLayout implements View {
+public class QweLayoutFactory extends PageLayout {
     
-    public static final String NAME = "книги";
+    static final String NAME = "книги";
     
-    private void addLayout() {
+    QweLayoutFactory(){
+        super(NAME);
+    }
+    
+    @Override
+    public void addLayout() {
         setMargin(true);
         
         Panel panel = new Panel();
         panel.setContent(new Label("qwe"));
         
         addComponent(panel);
-    }
-    
-    public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
-        removeAllComponents();
-        addLayout();
     }
     
 }

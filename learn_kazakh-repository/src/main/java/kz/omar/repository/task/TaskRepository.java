@@ -29,4 +29,10 @@ public interface TaskRepository extends JpaRepository<Task, Integer> {
     
     @Query("select t from Task t where t.common = 1")
     List<Task> getCommonTasks();
+    
+    @Query("select 1 from Task t" +
+            " where t.name = :taskName" +
+            " and t.role.id = :roleId")
+    Integer taskNameBelongForThisUser(@Param("taskName") String taskName, @Param("roleId") Integer roleId);
+    
 }

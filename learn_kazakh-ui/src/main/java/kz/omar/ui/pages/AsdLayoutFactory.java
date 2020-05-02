@@ -1,13 +1,12 @@
 package kz.omar.ui.pages;
 
-import com.vaadin.navigator.View;
-import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.PopupView;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
+import kz.omar.ui.pages.common.PageLayout;
 import kz.omar.ui.start.LearnKazakhMainUI;
 
 /**
@@ -16,11 +15,16 @@ import kz.omar.ui.start.LearnKazakhMainUI;
  * @project learn_kazakh
  */
 @SpringView(name = AsdLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class AsdLayoutFactory extends VerticalLayout implements View {
+public class AsdLayoutFactory extends PageLayout {
     
-    public static final String NAME = "цитаты";
+    static final String NAME = "музыка";
     
-    private void addLayout() {
+    AsdLayoutFactory() {
+        super(NAME);
+    }
+    
+    @Override
+    public void addLayout() {
         setMargin(true);
         
         VerticalLayout vertical = new VerticalLayout();
@@ -34,11 +38,6 @@ public class AsdLayoutFactory extends VerticalLayout implements View {
             popup.setPopupVisible(true);
         });
         addComponents(b, popup);
-    }
-    
-    public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
-        removeAllComponents();
-        addLayout();
     }
     
 }
