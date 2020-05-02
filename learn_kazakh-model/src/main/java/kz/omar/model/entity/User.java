@@ -1,5 +1,6 @@
 package kz.omar.model.entity;
 
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -15,6 +16,7 @@ import java.util.Collection;
  */
 @Entity
 @Table(name = "USERS")
+@Data
 public class User implements UserDetails {
     
     @Id
@@ -38,14 +40,6 @@ public class User implements UserDetails {
         return new ArrayList<GrantedAuthority>();
     }
     
-    public String getPassword() {
-        return this.password;
-    }
-    
-    public String getUsername() {
-        return this.username;
-    }
-    
     public boolean isAccountNonExpired() {
         return true;
     }
@@ -62,27 +56,4 @@ public class User implements UserDetails {
         return true;
     }
     
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    
-    public Integer getId() {
-        return id;
-    }
-    
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    
-    public Role getRole() {
-        return role;
-    }
-    
-    public void setRole(Role role) {
-        this.role = role;
-    }
 }

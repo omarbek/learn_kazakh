@@ -1,5 +1,7 @@
 package kz.omar.model.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
@@ -10,6 +12,7 @@ import javax.validation.constraints.NotNull;
  */
 @Entity
 @Table(name = "TASKS")
+@Data
 public class Task {
     
     @Id
@@ -38,64 +41,9 @@ public class Task {
     @Column(name = "common", nullable = false, columnDefinition = "boolean default false")
     private boolean common;
     
-    public int getTaskId() {
-        return taskId;
-    }
-    
-    public void setTaskId(int taskId) {
-        this.taskId = taskId;
-    }
-    
-    public Task getParent() {
-        return parent;
-    }
-    
-    public void setParent(Task parent) {
-        this.parent = parent;
-    }
-    
-    public String getNavigatePath() {
-        return navigatePath;
-    }
-    
-    public void setNavigatePath(String navigatePath) {
-        this.navigatePath = navigatePath;
-    }
-    
-    public String getName() {
-        return name;
-    }
-    
-    public void setName(String name) {
-        this.name = name;
-    }
-    
     @Override
     public String toString() {
         return name;
     }
     
-    public Role getRole() {
-        return role;
-    }
-    
-    public void setRole(Role role) {
-        this.role = role;
-    }
-    
-    public String getIconPath() {
-        return iconPath;
-    }
-    
-    public void setIconPath(String iconPath) {
-        this.iconPath = iconPath;
-    }
-    
-    public boolean isCommon() {
-        return common;
-    }
-    
-    public void setCommon(boolean common) {
-        this.common = common;
-    }
 }
