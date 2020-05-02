@@ -5,7 +5,8 @@ learn_kazakh-service/src/main/resources/
 learn_kazakh-service/src/test/
 learn_kazakh-ui/src/main/resources/
 learn_kazakh-ui/src/test/
-learn_kazakh-utils/src/
+learn_kazakh-utils/src/main/resources/
+learn_kazakh-utils/src/test/
 learn_kazakh-web/src/main/resources/
 learn_kazakh-web/src/test/
 .idea/
