@@ -89,7 +89,6 @@ public class VerticalMenuFactory implements UIComponentBuilder {
                 return;
             }
             
-            String path = selectedItemPath.toLowerCase().replaceAll("\\s+", "");
             LearnKazakhNavigator.navigate(path);
         }
     }

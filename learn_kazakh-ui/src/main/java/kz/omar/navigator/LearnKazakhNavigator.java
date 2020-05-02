@@ -22,8 +22,14 @@ public class LearnKazakhNavigator extends Navigator {
         return (LearnKazakhNavigator) navigator;
     }
     
-    public static void navigate(String path) {
+    public static void navigate(String selectedItemPath) {
         try {
+            String path;
+            if (selectedItemPath == null) {
+                path = null;
+            } else {
+                path = selectedItemPath.toLowerCase().replaceAll("\\s+", "");
+            }
             LearnKazakhNavigator navigator = LearnKazakhNavigator.getNavigator();
             navigator.navigateTo(path);
         } catch (Exception ignored) {

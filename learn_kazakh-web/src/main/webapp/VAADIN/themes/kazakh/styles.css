@@ -13882,6 +13882,11 @@ div.v-layout.v-horizontal.v-widget {
 	transition: all 0.4s ease 0s;
 }
 
+.kazakh .v-tree-node-vertical-menu:focus {
+	outline: none;
+	box-shadow: none;
+}
+
 .kazakh .v-label-main-page {
 	text-align: center;
 	font-size: 17px;
