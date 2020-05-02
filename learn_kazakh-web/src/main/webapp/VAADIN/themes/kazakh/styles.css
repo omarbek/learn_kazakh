@@ -13865,26 +13865,23 @@ div.v-layout.v-horizontal.v-widget {
     border: none;
 }
 
-.kazakh .v-tree-node-vertical-menu {
+.kazakh .v-button-vertical-menu {
     height: 50px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.kazakh .v-tree-node-vertical-menu:hover {
+.kazakh .v-button-vertical-menu:hover {
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 	transition: all 0.4s ease 0s;
 }
 
-.kazakh .v-tree-node-vertical-menu:focus {
-	outline: none;
-	box-shadow: none;
+.kazakh .v-button-vertical-menu:focus {
+	/*outline: none;*/
+	/*box-shadow: none;*/
 }
 
 .kazakh .v-label-main-page {
