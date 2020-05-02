@@ -6,20 +6,20 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.PopupView;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
-import kz.omar.ui.pages.common.PageLayout;
-import kz.omar.ui.start.LearnKazakhMainUI;
+import kz.omar.ui.pages.common.AbstractPageFactory;
+import kz.omar.ui.start.LearnKazakhUI;
 
 /**
  * @author Omarbek.Dinassil
  * on 2020-04-26
  * @project learn_kazakh
  */
-@SpringView(name = AsdLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class AsdLayoutFactory extends PageLayout {
+@SpringView(name = MusicPageFactory.NAME, ui = LearnKazakhUI.class)
+public class MusicPageFactory extends AbstractPageFactory {
     
     static final String NAME = "музыка";
     
-    AsdLayoutFactory() {
+    MusicPageFactory() {
         super(NAME);
     }
     

@@ -1,25 +1,23 @@
 package kz.omar.ui.pages;
 
-import com.vaadin.navigator.View;
-import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
-import kz.omar.ui.pages.common.PageLayout;
-import kz.omar.ui.start.LearnKazakhMainUI;
+import kz.omar.ui.pages.common.AbstractPageFactory;
+import kz.omar.ui.start.LearnKazakhUI;
 
 /**
  * @author Omarbek.Dinassil
  * on 2020-04-26
  * @project learn_kazakh
  */
-@SpringView(name = MainLayoutFactory.NAME, ui = LearnKazakhMainUI.class)
-public class MainLayoutFactory extends PageLayout {
+@SpringView(name = MainPageFactory.NAME, ui = LearnKazakhUI.class)
+public class MainPageFactory extends AbstractPageFactory {
     
     public static final String NAME = "главная";
     
-    MainLayoutFactory(){
+    MainPageFactory(){
         super(NAME);
     }
     

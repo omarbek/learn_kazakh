@@ -3,7 +3,7 @@ package kz.omar.navigator;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.ui.SingleComponentContainer;
 import com.vaadin.ui.UI;
-import kz.omar.ui.commons.NotReadyLayoutFactory;
+import kz.omar.ui.pages.common.NotReadyPageFactory;
 
 /**
  * @author Omarbek.Dinassil
@@ -39,12 +39,12 @@ public class LearnKazakhNavigator extends Navigator {
     @Override
     public void navigateTo(String viewName) {
         if (viewName == null) {
-            super.navigateTo(NotReadyLayoutFactory.NAME);
+            super.navigateTo(NotReadyPageFactory.NAME);
         } else {
             try {
                 super.navigateTo(viewName);
             } catch (Exception e) {
-                super.navigateTo(NotReadyLayoutFactory.NAME);
+                super.navigateTo(NotReadyPageFactory.NAME);
             }
         }
     }

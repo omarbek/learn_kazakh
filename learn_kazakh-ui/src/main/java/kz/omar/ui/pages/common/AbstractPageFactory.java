@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * on 2020-05-02
  * @project learn_kazakh
  */
-public abstract class PageLayout extends VerticalLayout implements View {
+public abstract class AbstractPageFactory extends VerticalLayout implements View {
     
     @Autowired
     private UserService userService;
@@ -23,7 +23,7 @@ public abstract class PageLayout extends VerticalLayout implements View {
     
     private String taskName;
     
-    public PageLayout(String taskName) {
+    public AbstractPageFactory(String taskName) {
         this.taskName = taskName;
     }
     

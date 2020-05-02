@@ -10,7 +10,7 @@ import kz.omar.navigator.LearnKazakhNavigator;
 import kz.omar.ui.commons.FooterFactory;
 import kz.omar.ui.commons.HorizontalMenuFactory;
 import kz.omar.ui.commons.VerticalMenuFactory;
-import kz.omar.ui.pages.MainLayoutFactory;
+import kz.omar.ui.pages.MainPageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
@@ -19,10 +19,10 @@ import org.springframework.context.ApplicationContext;
  * on 2020-04-25
  * @project learn_kazakh
  */
-@SpringUI(path = LearnKazakhMainUI.NAME)
+@SpringUI(path = LearnKazakhUI.NAME)
 @Title("Learn Kazakh")
 @Theme("kazakh")
-public class LearnKazakhMainUI extends UI {
+public class LearnKazakhUI extends UI {
     
     public static final String NAME = "/ui";
     
@@ -108,7 +108,7 @@ public class LearnKazakhMainUI extends UI {
         LearnKazakhNavigator navigator = new LearnKazakhNavigator(this, changePanel);
         applicationContext.getAutowireCapableBeanFactory().autowireBean(navigator);
         navigator.addProvider(springViewProvider);
-        navigator.navigateTo(MainLayoutFactory.NAME);
+        navigator.navigateTo(MainPageFactory.NAME);
     }
     
 }
