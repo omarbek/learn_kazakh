@@ -1,5 +1,6 @@
 package kz.omar.model.entity;
 
+import kz.omar.utils.NotNullUtils;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -21,7 +22,7 @@ public class Role {
     private Integer roleId;
     
     @Column(name = "name")
-    @NotNull(message = "Name must not be null")
+    @NotNull(message = NotNullUtils.Constants.NAME_MUST_NOT_BE_NULL_VALUE)
     private String name;
     
     @Override
