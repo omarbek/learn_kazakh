@@ -32,8 +32,8 @@ public abstract class AbstractPageFactory extends VerticalLayout implements View
         removeAllComponents();
         
         Integer roleId = userService.getCurrentUser().getRole().getRoleId();
-        Integer i = taskService.taskNameBelongForThisUser(taskName, roleId);
-        if (i == null) {
+        Integer access = taskService.taskNameBelongForThisUser(taskName, roleId);
+        if (access == null) {
             Notification.show("У вас нет доступа");
             return;
         }

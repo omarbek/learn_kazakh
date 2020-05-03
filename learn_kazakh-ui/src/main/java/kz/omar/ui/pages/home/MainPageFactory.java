@@ -1,4 +1,4 @@
-package kz.omar.ui.pages;
+package kz.omar.ui.pages.home;
 
 import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.ui.label.ContentMode;

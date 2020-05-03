@@ -10,7 +10,7 @@ import kz.omar.navigator.LearnKazakhNavigator;
 import kz.omar.ui.commons.FooterFactory;
 import kz.omar.ui.commons.HorizontalMenuFactory;
 import kz.omar.ui.commons.VerticalMenuFactory;
-import kz.omar.ui.pages.MainPageFactory;
+import kz.omar.ui.pages.home.MainPageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 

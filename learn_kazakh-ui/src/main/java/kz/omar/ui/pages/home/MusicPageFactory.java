@@ -1,4 +1,4 @@
-package kz.omar.ui.pages;
+package kz.omar.ui.pages.home;
 
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.Button;

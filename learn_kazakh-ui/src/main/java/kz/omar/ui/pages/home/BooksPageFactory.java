@@ -1,4 +1,4 @@
-package kz.omar.ui.pages;
+package kz.omar.ui.pages.home;
 
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.Label;
@@ -11,12 +11,12 @@ import kz.omar.ui.start.LearnKazakhUI;
  * on 2020-04-26
  * @project learn_kazakh
  */
-@SpringView(name = QwePageFactory.NAME, ui = LearnKazakhUI.class)
-public class QwePageFactory extends AbstractPageFactory {
+@SpringView(name = BooksPageFactory.NAME, ui = LearnKazakhUI.class)
+public class BooksPageFactory extends AbstractPageFactory {
     
     static final String NAME = "книги";
     
-    QwePageFactory(){
+    BooksPageFactory(){
         super(NAME);
     }
     
