@@ -7,7 +7,8 @@ package kz.omar.utils;
  */
 public enum NotNullUtils {
     
-    NAME_MUST_NOT_BE_NULL(Constants.NAME_MUST_NOT_BE_NULL_VALUE)
+    NAME_MUST_NOT_BE_NULL(Constants.NAME_MUST_NOT_BE_NULL_VALUE),
+    LETTER_MUST_NOT_BE_NULL(Constants.LETTER_MUST_NOT_BE_NULL_VALUE),
     
     ;
     
@@ -16,6 +17,7 @@ public enum NotNullUtils {
     
     public static class Constants {
         public static final String NAME_MUST_NOT_BE_NULL_VALUE = "Имя не должно быть пустым";
+        public static final String LETTER_MUST_NOT_BE_NULL_VALUE = "Буква не должна быть пустым";
     }
     
 }
