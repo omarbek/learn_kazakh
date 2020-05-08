@@ -11,6 +11,7 @@ import kz.omar.model.entity.AlphabetMedia;
 import kz.omar.service.alphabet.AlphabetService;
 import kz.omar.ui.pages.common.AbstractPageFactory;
 import kz.omar.ui.start.LearnKazakhUI;
+import kz.omar.utils.ButtonUtils;
 import kz.omar.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,6 +34,10 @@ public class AlphabetPageFactory extends AbstractPageFactory {
     private List<Alphabet> alphabetList;
     private List<AlphabetMedia> alphabetMediaList;
     
+    private Button nextButton;
+    private Button previousButton;
+    private int page = 0;
+    
     public AlphabetPageFactory() {
         super(NAME);
         alphabetList = new ArrayList<>();
@@ -41,34 +46,66 @@ public class AlphabetPageFactory extends AbstractPageFactory {
     
     @Override
     protected void addLayout() {
-        setMargin(true);
+        setHeightUndefined();
         alphabetList = alphabetService.getAlphabet();
         
         Panel panel = new Panel();
+        panel.setSizeFull();
         
-        GridLayout gridLayout = new GridLayout(3, 3);
-        gridLayout.setHeightUndefined();
-        gridLayout.setSpacing(true);
+        GridLayout gridLayout = new GridLayout(3, 4);
+        gridLayout.setSizeFull();
         
-        int page = 0;
-        init(gridLayout, page);
-        
-        Button nextButton = new Button("next");
+        nextButton = new Button(ButtonUtils.NEXT.toString());
         nextButton.setWidthUndefined();
+//        nextButton.setHeight("50px");
+        nextButton.setIcon(new ThemeResource("../../themes/runo/icons/icons32/arrow-right.png"));
+        nextButton.addStyleName("icon-right");
         nextButton.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent event) {
-                init(gridLayout, page + 1);
+                page++;
+                init(gridLayout, page);
             }
         });
-        gridLayout.addComponent(nextButton, 1, 2, 2, 2);
-        gridLayout.setComponentAlignment(nextButton, Alignment.MIDDLE_CENTER);
+        
+        previousButton = new Button(ButtonUtils.PREVIOUS.toString());
+        previousButton.setWidthUndefined();
+        previousButton.setIcon(new ThemeResource("../../themes/runo/icons/icons32/arrow-left.png"));
+        previousButton.setEnabled(false);
+        previousButton.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent event) {
+                page--;
+                init(gridLayout, page);
+            }
+        });
+        
+        init(gridLayout, page);
+        
+        HorizontalLayout buttonsHL = new HorizontalLayout(previousButton, nextButton);
+        buttonsHL.setWidthUndefined();
+        buttonsHL.setSpacing(true);
+        
+        gridLayout.addComponent(buttonsHL, 0, 2, 2, 2);
+        gridLayout.setComponentAlignment(buttonsHL, Alignment.MIDDLE_CENTER);
         
         panel.setContent(gridLayout);
         addComponent(panel);
     }
     
     private void init(GridLayout gridLayout, int page) {
+        if (page == 0) {
+            previousButton.setEnabled(false);
+        } else {
+            previousButton.setEnabled(true);
+        }
+        
+        if (page == alphabetList.size() - 1) {
+            nextButton.setEnabled(false);
+        } else {
+            nextButton.setEnabled(true);
+        }
+        
         Alphabet alphabet = alphabetList.get(page);
         String letter = alphabet.getLetter();
         
@@ -97,7 +134,8 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         audio.setAltText("Can't play media");
         audio.setStyleName("invisible");
         audio.setSources(new ExternalResource(audioSource));
-        addComponent(audio);
+        gridLayout.removeComponent(column,3);
+        gridLayout.addComponent(audio,column,3);
         
         Embedded image = new Embedded();
         image.setWidth("350px");

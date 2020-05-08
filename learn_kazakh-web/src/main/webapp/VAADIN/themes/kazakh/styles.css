@@ -13910,3 +13910,8 @@ div.v-layout.v-horizontal.v-widget {
 	filter: alpha(opacity=30);
 	cursor: pointer;
 }
+
+.kazakh .v-button-icon-right .v-icon {
+	float: right;
+	margin-left: 13px;
+}
