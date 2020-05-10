@@ -28,7 +28,7 @@ public interface TaskRepository extends JpaRepository<Task, Integer> {
     List<Task> getTasksByParentId(@Param("roleId") Integer roleId, @Param("parentId") Integer parentId);
     
     @Query("select 1 from Task t" +
-            " where t.name = :taskName" +
+            " where replace(t.name, ' ', '') = :taskName" +
             " and (t.role.id = :roleId or t.common = 1)")
     Integer taskNameBelongForThisUser(@Param("taskName") String taskName, @Param("roleId") Integer roleId);
     

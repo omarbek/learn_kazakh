@@ -27,5 +27,14 @@
     <changeSet logicalFilePath="path-independent" id="omar_07" author="omar">
         <sqlFile path="/omar/20200511/script_5.sql" relativeToChangelogFile="true" splitStatements="true"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" id="omar_08" author="omar">
+        <sqlFile path="/omar/20200511/script_6.sql" relativeToChangelogFile="true" splitStatements="true"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" id="omar_09" author="omar">
+        <sqlFile path="/omar/20200511/script_7.sql" relativeToChangelogFile="true" splitStatements="true"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" id="omar_10" author="omar">
+        <sqlFile path="/omar/20200511/script_8.sql" relativeToChangelogFile="true" splitStatements="true"/>
+    </changeSet>
 
 </databaseChangeLog>

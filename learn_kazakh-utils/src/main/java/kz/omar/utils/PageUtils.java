@@ -7,7 +7,8 @@ package kz.omar.utils;
  */
 public enum PageUtils {
     
-    ALPHABET(Constants.ALPHABET_VALUE)
+    ALPHABET(Constants.ALPHABET_VALUE),
+    FIND_WORD(Constants.FIND_WORD_VALUE),
     
     ;
     
@@ -16,6 +17,7 @@ public enum PageUtils {
     
     public static class Constants {
         public static final String ALPHABET_VALUE = "алфавит";
+        public static final String FIND_WORD_VALUE = "найдислово";
     }
     
 }

@@ -15,5 +15,9 @@ public interface AlphabetService {
     List<Alphabet> getAlphabet();
     
     List<AlphabetMedia> getMediaByLetter(Integer alphabetId);
-
+    
+    List<AlphabetMedia> getRandomAlphabetMediaWithThis(Integer alphabetMediaId);
+    
+    List<AlphabetMedia> getAlphabetMedia();
+    
 }

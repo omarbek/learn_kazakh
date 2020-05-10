@@ -66,7 +66,7 @@ public class VerticalMenuFactory implements UIComponentBuilder {
                 menuButton.addStyleName(ValoTheme.BUTTON_BORDERLESS);
                 String icon = task.getIconPath();
                 if (icon != null) {
-                    menuButton.setIcon(new ThemeResource("../../images/" + icon));
+                    menuButton.setIcon(new ThemeResource("../../images/menu/" + icon));
                 }
                 menuButton.addClickListener((Button.ClickEvent event) -> {
                     if (taskName == null) {

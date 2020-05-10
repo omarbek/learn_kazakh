@@ -1,6 +1,5 @@
 package kz.omar.repository.alphabet;
 
-import kz.omar.model.entity.Alphabet;
 import kz.omar.model.entity.AlphabetMedia;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -15,9 +14,18 @@ import java.util.List;
  * @project learn_kazakh
  */
 @Repository
-public interface AlphabetMediaRepository extends JpaRepository<AlphabetMedia,Integer> {
+public interface AlphabetMediaRepository extends JpaRepository<AlphabetMedia, Integer> {
     
     @Query("select am from AlphabetMedia am where am.alphabet.id = :alphabetId")
     List<AlphabetMedia> getMediaByLetter(@Param("alphabetId") Integer alphabetId);
+    
+    @Query(value = "select * from alphabet_media where id != :alphabetMediaId order by rand() limit 2",
+            nativeQuery = true)
+    List<AlphabetMedia> getRandomAlphabetMediaWithoutThis(@Param("alphabetMediaId") Integer alphabetMediaId);
+    
+    @Query(value =
+            "select (select id from alphabet_media where alphabet_id = alphabet.id order by rand() limit 1) as id" +
+                    " from alphabet", nativeQuery = true)
+    List<Integer> getAlphabetMediaIds();
     
 }

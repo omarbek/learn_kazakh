@@ -21,6 +21,9 @@ public class AlphabetMedia {
     @Column(name = "id")
     private Integer id;
     
+    @Column(name="name")
+    private String name;
+    
     @Column(name = "image_source")
     private String imageSource;
     
