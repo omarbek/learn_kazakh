@@ -22,7 +22,7 @@ public class FooterFactory implements UIComponentBuilder {
     
     private FooterMenuLayout footerMenuLayout;
     
-    private List<Task> commonTasks;
+    private List<Task> footerTasks;
     
     @Autowired
     private TaskService taskService;
@@ -33,7 +33,7 @@ public class FooterFactory implements UIComponentBuilder {
     private class FooterMenuLayout extends VerticalLayout {
         
         public FooterMenuLayout init() {
-            commonTasks = taskService.getTasksWithNoParentByRoleId(null);
+            footerTasks = taskService.getFooterTasks();
             return this;
         }
         
@@ -58,7 +58,7 @@ public class FooterFactory implements UIComponentBuilder {
             linksHL.setWidth("75%");
             linksHL.setHeight("100px");
     
-            for (Task task: commonTasks) {
+            for (Task task: footerTasks) {
                 Button menuButton = new Button(task.getName());
                 menuButton.addStyleName(ValoTheme.BUTTON_BORDERLESS);
                 menuButton.addClickListener((Button.ClickEvent event) -> {

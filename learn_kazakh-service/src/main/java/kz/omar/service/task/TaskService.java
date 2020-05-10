@@ -16,4 +16,7 @@ public interface TaskService {
     List<Task> getTasksByParentId(Integer menuId, Integer id);
     
     Integer taskNameBelongForThisUser(String taskName, Integer roleId);
+    
+    List<Task> getFooterTasks();
+    
 }

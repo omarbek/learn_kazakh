@@ -32,7 +32,7 @@ public class MusicPageFactory extends AbstractPageFactory {
         
         PopupView popup = new PopupView(null, vertical);
         
-        Button b = new Button("Show Hint");
+        Button b = new Button("Музыка");
         b.addStyleName(ValoTheme.BUTTON_BORDERLESS);
         b.addClickListener((Button.ClickEvent event) -> {
             popup.setPopupVisible(true);

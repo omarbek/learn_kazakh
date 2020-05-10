@@ -25,7 +25,7 @@ public class BooksPageFactory extends AbstractPageFactory {
         setMargin(true);
         
         Panel panel = new Panel();
-        panel.setContent(new Label("qwe"));
+        panel.setContent(new Label("Книги"));
         
         addComponent(panel);
     }

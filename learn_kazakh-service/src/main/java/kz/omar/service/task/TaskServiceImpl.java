@@ -20,9 +20,6 @@ public class TaskServiceImpl implements TaskService {
     
     @Override
     public List<Task> getTasksWithNoParentByRoleId(Integer roleId) {
-        if (roleId == null) {
-            return taskRepository.getCommonTasks();
-        }
         return taskRepository.getTasksWithNoParentByRoleId(roleId);
     }
     
@@ -34,6 +31,11 @@ public class TaskServiceImpl implements TaskService {
     @Override
     public Integer taskNameBelongForThisUser(String taskName, Integer roleId) {
         return taskRepository.taskNameBelongForThisUser(taskName, roleId);
+    }
+    
+    @Override
+    public List<Task> getFooterTasks() {
+        return taskRepository.getFooterTasks();
     }
     
 }
