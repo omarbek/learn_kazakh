@@ -76,7 +76,7 @@
                     <changeLogFile>
                         /Users/omar/Documents/projects/IdeaProjects/learn_kazakh/learn_kazakh-model/src/main/resources/db/liquibase-changelog.xml
                     </changeLogFile>
-                    <url>jdbc:mysql://localhost:3306/learn_kazakh</url>
+                    <url>jdbc:mysql://localhost:3306/learn_kazakh?useUnicode=true&amp;characterEncoding=UTF-8</url>
                     <username>omar</username>
                     <password>omar</password>
                 </configuration>
