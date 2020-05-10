@@ -18,7 +18,8 @@ public interface TaskRepository extends JpaRepository<Task, Integer> {
     
     @Query("select t from Task t" +
             " where t.parent is null" +
-            " and (t.role.id = :roleId or t.common = 1)")
+            " and (t.role.id = :roleId or t.common = 1)" +
+            " order by t.common")
     List<Task> getTasksWithNoParentByRoleId(@Param("roleId") Integer roleId);
     
     @Query("select t from Task t" +
