@@ -1,0 +1,1 @@
+insert into alphabet (id,letter) values (3,'ggg');
