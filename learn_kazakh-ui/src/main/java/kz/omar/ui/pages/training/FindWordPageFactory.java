@@ -37,10 +37,12 @@ public class FindWordPageFactory extends AbstractPageFactory {
     private Button nextButton;
     private Button answerButton;
     private Button previousButton;
+    private Button finishButton;
     
     private int page = 0;
     private String wordName;
     private String answeredName;
+    private int count = 0;
     
     public FindWordPageFactory() {
         super(NAME);
@@ -79,10 +81,12 @@ public class FindWordPageFactory extends AbstractPageFactory {
         answerButton.addClickListener(event -> {
             if (answeredName.equals(wordName)) {
                 Notification.show("Right");
+                count++;
             } else {
                 Notification.show("Wrong");
             }
             answerButton.setEnabled(false);
+            finishButton.setEnabled(true);
         });
         
         previousButton = new Button(ButtonUtils.PREVIOUS.toString());
@@ -97,9 +101,18 @@ public class FindWordPageFactory extends AbstractPageFactory {
             }
         });
         
+        finishButton = new Button(ButtonUtils.FINISH.toString());
+        finishButton.setWidthUndefined();
+        finishButton.addStyleName(ValoTheme.BUTTON_PRIMARY);
+        finishButton.setVisible(false);
+        finishButton.addClickListener(event -> {
+            Notification.show("Тренировка завершена, вы набрали " + count + " очка");
+            //todo navigate to empty page
+        });
+        
         init(gridLayout, page);
         
-        HorizontalLayout buttonsHL = new HorizontalLayout(previousButton, answerButton, nextButton);
+        HorizontalLayout buttonsHL = new HorizontalLayout(answerButton, nextButton, finishButton);
         buttonsHL.setWidthUndefined();
         buttonsHL.setSpacing(true);
         buttonsHL.setMargin(true);
@@ -113,6 +126,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
     
     private void init(GridLayout gridLayout, int page) {
         answerButton.setEnabled(true);
+        finishButton.setEnabled(false);
         if (page == 0) {
             previousButton.setEnabled(false);
         } else {
@@ -120,6 +134,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
         }
         
         if (page == wordAlphabetList.size() - 1) {
+            finishButton.setVisible(true);
             nextButton.setEnabled(false);
         } else {
             nextButton.setEnabled(true);
