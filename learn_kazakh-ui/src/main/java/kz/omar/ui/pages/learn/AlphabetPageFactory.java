@@ -162,7 +162,7 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         
         Embedded image = new Embedded();
         image.setWidth("350px");
-        image.addStyleName("audio-hover");
+        image.addStyleName("audio-image");
         image.setSource(new ThemeResource(imageSource));
         image.addClickListener(new MouseEvents.ClickListener() {
             @Override

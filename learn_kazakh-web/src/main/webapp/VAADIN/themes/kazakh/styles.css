@@ -13902,7 +13902,16 @@ div.v-layout.v-horizontal.v-widget {
 	background: #ad33ff;
 }
 
-.kazakh .v-embedded-audio-hover:hover {
+.kazakh .v-embedded-audio-image:hover {
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	cursor: pointer;
+}
+
+.kazakh .v-embedded-image-clicked {
 	-moz-box-shadow: 0 0 10px #ccc;
 	-webkit-box-shadow: 0 0 10px #ccc;
 	box-shadow: 0 0 10px #ccc;

@@ -9,6 +9,7 @@ public enum ButtonUtils {
     
     NEXT("Следующая"),
     PREVIOUS("Предыдущая"),
+    ANSWER("Ответить"),
     
     ;
     

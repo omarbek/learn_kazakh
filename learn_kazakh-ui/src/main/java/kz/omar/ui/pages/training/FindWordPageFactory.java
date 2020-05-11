@@ -5,6 +5,7 @@ import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
+import com.vaadin.ui.themes.ValoTheme;
 import kz.omar.model.entity.AlphabetMedia;
 import kz.omar.service.alphabet.AlphabetService;
 import kz.omar.ui.pages.common.AbstractPageFactory;
@@ -31,28 +32,34 @@ public class FindWordPageFactory extends AbstractPageFactory {
     
     private List<AlphabetMedia> wordAlphabetList;
     private List<AlphabetMedia> randomAlphabetList;
+    private List<Embedded> images;
     
     private Button nextButton;
+    private Button answerButton;
     private Button previousButton;
-    private int page = 0;
     
-    public FindWordPageFactory(){
+    private int page = 0;
+    private String wordName;
+    private String answeredName;
+    
+    public FindWordPageFactory() {
         super(NAME);
         wordAlphabetList = new ArrayList<>();
         randomAlphabetList = new ArrayList<>();
+        images = new ArrayList<>();
     }
     
     @Override
     protected void addLayout() {
         setHeightUndefined();
-        wordAlphabetList=alphabetService.getAlphabetMedia();
-    
+        wordAlphabetList = alphabetService.getAlphabetMedia();
+        
         Panel panel = new Panel();
         panel.setSizeFull();
-    
+        
         GridLayout gridLayout = new GridLayout(3, 4);
         gridLayout.setSizeFull();
-    
+        
         nextButton = new Button(ButtonUtils.NEXT.toString());
         nextButton.setWidthUndefined();
         //        nextButton.setHeight("50px");
@@ -65,7 +72,19 @@ public class FindWordPageFactory extends AbstractPageFactory {
                 init(gridLayout, page);
             }
         });
-    
+        
+        answerButton = new Button(ButtonUtils.ANSWER.toString());
+        answerButton.setWidthUndefined();
+        answerButton.addStyleName(ValoTheme.BUTTON_FRIENDLY);
+        answerButton.addClickListener(event -> {
+            if (answeredName.equals(wordName)) {
+                Notification.show("Right");
+            } else {
+                Notification.show("Wrong");
+            }
+            answerButton.setEnabled(false);
+        });
+        
         previousButton = new Button(ButtonUtils.PREVIOUS.toString());
         previousButton.setWidthUndefined();
         previousButton.setIcon(new ThemeResource("../../themes/runo/icons/icons32/arrow-left.png"));
@@ -77,21 +96,23 @@ public class FindWordPageFactory extends AbstractPageFactory {
                 init(gridLayout, page);
             }
         });
-    
+        
         init(gridLayout, page);
-    
-        HorizontalLayout buttonsHL = new HorizontalLayout(previousButton, nextButton);
+        
+        HorizontalLayout buttonsHL = new HorizontalLayout(previousButton, answerButton, nextButton);
         buttonsHL.setWidthUndefined();
         buttonsHL.setSpacing(true);
-    
+        buttonsHL.setMargin(true);
+        
         gridLayout.addComponent(buttonsHL, 0, 2, 2, 2);
         gridLayout.setComponentAlignment(buttonsHL, Alignment.MIDDLE_CENTER);
-    
+        
         panel.setContent(gridLayout);
         addComponent(panel);
     }
     
     private void init(GridLayout gridLayout, int page) {
+        answerButton.setEnabled(true);
         if (page == 0) {
             previousButton.setEnabled(false);
         } else {
@@ -105,7 +126,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
         }
         
         AlphabetMedia alphabetMedia = wordAlphabetList.get(page);
-        String wordName = alphabetMedia.getName();
+        wordName = alphabetMedia.getName();
         
         Label letterLabel = new Label("<h1>" + wordName + "</h1>", ContentMode.HTML);
         letterLabel.setWidthUndefined();
@@ -113,30 +134,37 @@ public class FindWordPageFactory extends AbstractPageFactory {
         gridLayout.removeComponent(1, 0);
         gridLayout.addComponent(letterLabel, 1, 0);
         gridLayout.setComponentAlignment(letterLabel, Alignment.MIDDLE_CENTER);
-    
+        
         randomAlphabetList = alphabetService.getRandomAlphabetMediaWithThis(alphabetMedia.getId());
         int count = 0;
         for (AlphabetMedia media: randomAlphabetList) {
             String imageSource = media.getImageSource();
             String audioSource = media.getAudioSource();
             addImagesToGrid(gridLayout, count++, "../../images/alphabet/" + imageSource,
-                    "/learn_kazakh/VAADIN/sounds/alphabet/" + audioSource);
+                    "/learn_kazakh/VAADIN/sounds/alphabet/" + audioSource, media.getName());
         }
     }
     
-    private void addImagesToGrid(GridLayout gridLayout, int column, String imageSource, String audioSource) {
+    private void addImagesToGrid(GridLayout gridLayout, int column, String imageSource, String audioSource,
+                                 String name) {
         Embedded image = new Embedded();
         image.setWidth("350px");
-        image.addStyleName("audio-hover");
+        image.addStyleName("audio-image");
         image.setSource(new ThemeResource(imageSource));
         image.addClickListener(new MouseEvents.ClickListener() {
             @Override
             public void click(MouseEvents.ClickEvent event) {
-                Notification.show("ASD");//todo
+                answeredName = name;
+                for (Embedded embedded: images) {
+                    embedded.removeStyleName("image-clicked");
+                }
+                image.addStyleName("image-clicked");
             }
         });
+        images.add(image);
         gridLayout.removeComponent(column, 1);
         gridLayout.addComponent(image, column, 1);
+        gridLayout.setComponentAlignment(image, Alignment.MIDDLE_CENTER);
     }
     
 }
