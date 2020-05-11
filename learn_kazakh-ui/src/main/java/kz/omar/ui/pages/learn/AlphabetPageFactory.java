@@ -52,12 +52,12 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         Panel panel = new Panel();
         panel.setSizeFull();
         
-        GridLayout gridLayout = new GridLayout(3, 4);
+        GridLayout gridLayout = new GridLayout(3, 5);
         gridLayout.setSizeFull();
         
         nextButton = new Button(ButtonUtils.NEXT.toString());
         nextButton.setWidthUndefined();
-//        nextButton.setHeight("50px");
+        //        nextButton.setHeight("50px");
         nextButton.setIcon(new ThemeResource("../../themes/runo/icons/icons32/arrow-right.png"));
         nextButton.addStyleName("icon-right");
         nextButton.addClickListener(new Button.ClickListener() {
@@ -84,10 +84,33 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         
         HorizontalLayout buttonsHL = new HorizontalLayout(previousButton, nextButton);
         buttonsHL.setWidthUndefined();
+        buttonsHL.setMargin(true);
         buttonsHL.setSpacing(true);
         
         gridLayout.addComponent(buttonsHL, 0, 2, 2, 2);
         gridLayout.setComponentAlignment(buttonsHL, Alignment.MIDDLE_CENTER);
+        
+        HorizontalLayout alphabetHL = new HorizontalLayout();
+        alphabetHL.setWidthUndefined();
+        alphabetHL.setMargin(true);
+        alphabetHL.setSpacing(true);
+        
+        for (Alphabet alphabet: alphabetList) {
+            Button letterButton = new Button(alphabet.getLetter());
+            //            letterButton.addStyleName(ValoTheme.BUTTON_LINK);
+            letterButton.addClickListener(new Button.ClickListener() {
+                @Override
+                public void buttonClick(Button.ClickEvent event) {
+                    page = alphabet.getId() - 1;
+                    init(gridLayout, page);
+                }
+            });
+            alphabetHL.addComponent(letterButton);
+            alphabetHL.setComponentAlignment(letterButton, Alignment.MIDDLE_CENTER);
+        }
+        
+        gridLayout.addComponent(alphabetHL, 0, 4, 2, 4);
+        gridLayout.setComponentAlignment(alphabetHL, Alignment.MIDDLE_CENTER);
         
         panel.setContent(gridLayout);
         addComponent(panel);
@@ -134,8 +157,8 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         audio.setAltText("Can't play media");
         audio.setStyleName("invisible");
         audio.setSources(new ExternalResource(audioSource));
-        gridLayout.removeComponent(column,3);
-        gridLayout.addComponent(audio,column,3);
+        gridLayout.removeComponent(column, 3);
+        gridLayout.addComponent(audio, column, 3);
         
         Embedded image = new Embedded();
         image.setWidth("350px");
@@ -149,5 +172,6 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         });
         gridLayout.removeComponent(column, 1);
         gridLayout.addComponent(image, column, 1);
+        gridLayout.setComponentAlignment(image, Alignment.MIDDLE_CENTER);
     }
 }
