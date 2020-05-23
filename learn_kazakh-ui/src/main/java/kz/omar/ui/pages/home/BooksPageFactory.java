@@ -17,7 +17,7 @@ public class BooksPageFactory extends AbstractPageFactory {//todo
     
     static final String NAME = PageUtils.Constants.BOOKS_VALUE;
     
-    BooksPageFactory(){
+    BooksPageFactory() {
         super(NAME);
     }
     

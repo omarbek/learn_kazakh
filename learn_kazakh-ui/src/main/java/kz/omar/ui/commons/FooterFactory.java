@@ -57,7 +57,7 @@ public class FooterFactory implements UIComponentBuilder {
             linksHL.addStyleName("horizontal-menu");
             linksHL.setWidth("75%");
             linksHL.setHeight("100px");
-    
+            
             for (Task task: footerTasks) {
                 Button menuButton = new Button(task.getName());
                 menuButton.addStyleName(ValoTheme.BUTTON_BORDERLESS);
@@ -65,14 +65,14 @@ public class FooterFactory implements UIComponentBuilder {
                     Notification.show("s");//todo
                 });
                 menuButton.addStyleName("menu");
-    
+                
                 linksHL.addComponent(menuButton);
                 linksHL.setComponentAlignment(menuButton, Alignment.MIDDLE_CENTER);
             }
             
             aboutVL.addComponent(linksHL);
-            aboutVL.setComponentAlignment(linksHL,Alignment.MIDDLE_CENTER);
-    
+            aboutVL.setComponentAlignment(linksHL, Alignment.MIDDLE_CENTER);
+            
             Label aboutLabel = new Label("<h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem " +
                     "accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore " +
                     "veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem " +
@@ -81,7 +81,7 @@ public class FooterFactory implements UIComponentBuilder {
             aboutLabel.setWidth("50%");
             aboutLabel.setHeight("100px");
             aboutVL.addComponent(aboutLabel);
-            aboutVL.setComponentAlignment(aboutLabel,Alignment.MIDDLE_CENTER);
+            aboutVL.setComponentAlignment(aboutLabel, Alignment.MIDDLE_CENTER);
             
             aboutPanel.setContent(aboutVL);
             rootVL.addComponent(aboutPanel);
