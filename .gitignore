@@ -12,3 +12,9 @@ learn_kazakh-web/src/test/
 .idea/
 target/learn_kazakh.iml
 learn_kazakh.iml
+learn_kazakh-model/target/
+learn_kazakh-repository/target/
+learn_kazakh-service/target/
+learn_kazakh-ui/target/
+learn_kazakh-utils/target/
+learn_kazakh-web/target/
