@@ -1,0 +1,10 @@
+insert into alphabet values (3, 'Бб');
+insert into alphabet values (4, 'Вв');
+insert into alphabet values (5, 'Гг');
+insert into alphabet values (6, 'Дд');
+insert into alphabet values (7, 'Ее');
+insert into alphabet values (8, 'Ёё');
+insert into alphabet values (9, 'Жж');
+insert into alphabet values (10, 'Зз');
+insert into alphabet values (11, 'Ии');
+insert into alphabet values (12, 'Йй');
