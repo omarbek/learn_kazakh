@@ -16,8 +16,8 @@ public enum FieldUtils {
     
     private String item;
     
-    FieldUtils(String item){
-        this.item=item;
+    FieldUtils(String item) {
+        this.item = item;
     }
     
     @Override

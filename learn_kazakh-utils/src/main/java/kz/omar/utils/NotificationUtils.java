@@ -18,8 +18,8 @@ public enum NotificationUtils {
     
     private String item;
     
-    NotificationUtils(String item){
-        this.item=item;
+    NotificationUtils(String item) {
+        this.item = item;
     }
     
     @Override

@@ -19,13 +19,13 @@ public enum ButtonUtils {
     
     private String item;
     
-    ButtonUtils(String item){
-        this.item=item;
+    ButtonUtils(String item) {
+        this.item = item;
     }
     
     @Override
     public String toString() {
         return item;
     }
-
+    
 }

@@ -14,8 +14,8 @@ public enum TitleUtils {
     
     private String item;
     
-    TitleUtils(String item){
-        this.item=item;
+    TitleUtils(String item) {
+        this.item = item;
     }
     
     @Override
