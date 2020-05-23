@@ -76,7 +76,7 @@ public class FooterFactory implements UIComponentBuilder {
             Label aboutLabel = new Label("<h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem " +
                     "accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore " +
                     "veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem " +
-                    "quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</h3>");
+                    "quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</h3>");//todo
             aboutLabel.setContentMode(ContentMode.HTML);
             aboutLabel.setWidth("50%");
             aboutLabel.setHeight("100px");

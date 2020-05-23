@@ -5,6 +5,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
 import kz.omar.ui.pages.common.AbstractPageFactory;
 import kz.omar.ui.start.LearnKazakhUI;
+import kz.omar.utils.PageUtils;
 
 /**
  * @author Omarbek.Dinassil
@@ -12,9 +13,9 @@ import kz.omar.ui.start.LearnKazakhUI;
  * @project learn_kazakh
  */
 @SpringView(name = BooksPageFactory.NAME, ui = LearnKazakhUI.class)
-public class BooksPageFactory extends AbstractPageFactory {
+public class BooksPageFactory extends AbstractPageFactory {//todo
     
-    static final String NAME = "книги";
+    static final String NAME = PageUtils.Constants.BOOKS_VALUE;
     
     BooksPageFactory(){
         super(NAME);

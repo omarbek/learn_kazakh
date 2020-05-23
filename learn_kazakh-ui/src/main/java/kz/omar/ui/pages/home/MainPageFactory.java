@@ -6,6 +6,7 @@ import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
 import kz.omar.ui.pages.common.AbstractPageFactory;
 import kz.omar.ui.start.LearnKazakhUI;
+import kz.omar.utils.PageUtils;
 
 /**
  * @author Omarbek.Dinassil
@@ -15,7 +16,7 @@ import kz.omar.ui.start.LearnKazakhUI;
 @SpringView(name = MainPageFactory.NAME, ui = LearnKazakhUI.class)
 public class MainPageFactory extends AbstractPageFactory {
     
-    public static final String NAME = "главная";
+    public static final String NAME = PageUtils.Constants.MAIN_VALUE;
     
     MainPageFactory(){
         super(NAME);
@@ -43,7 +44,7 @@ public class MainPageFactory extends AbstractPageFactory {
                 "для понимания и освоения основ казахской речи." +
                 "<br>" +
                 "Чем больше слов ты изучишь, тем больше " +
-                "станет твой дракон!</p>");
+                "станет твой дракон!</p>");//todo
         welcomeLabel.setContentMode(ContentMode.HTML);
         welcomeLabel.setStyleName("main-page");
         bottomHL.addComponent(welcomeLabel);

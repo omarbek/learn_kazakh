@@ -8,6 +8,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 import kz.omar.ui.pages.common.AbstractPageFactory;
 import kz.omar.ui.start.LearnKazakhUI;
+import kz.omar.utils.PageUtils;
 
 /**
  * @author Omarbek.Dinassil
@@ -15,9 +16,9 @@ import kz.omar.ui.start.LearnKazakhUI;
  * @project learn_kazakh
  */
 @SpringView(name = MusicPageFactory.NAME, ui = LearnKazakhUI.class)
-public class MusicPageFactory extends AbstractPageFactory {
+public class MusicPageFactory extends AbstractPageFactory {//todo
     
-    static final String NAME = "музыка";
+    static final String NAME = PageUtils.Constants.MUSIC_VALUE;
     
     MusicPageFactory() {
         super(NAME);

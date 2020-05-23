@@ -80,7 +80,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
         answerButton.addStyleName(ValoTheme.BUTTON_FRIENDLY);
         answerButton.addClickListener(event -> {
             if (answeredName.equals(wordName)) {
-                Notification.show("Right");
+                Notification.show("Right");//todo
                 count++;
             } else {
                 Notification.show("Wrong");

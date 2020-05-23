@@ -2,24 +2,19 @@ package kz.omar.utils;
 
 /**
  * @author Omarbek.Dinassil
- * on 2020-05-07
+ * on 2020-05-23
  * @project learn_kazakh
  */
-public enum ButtonUtils {
+public enum TitleUtils {
     
-    NEXT("Следующая"),
-    PREVIOUS("Предыдущая"),
-    ANSWER("Ответить"),
-    FINISH("Завершить"),
-    LOGIN("Вход"),
     SIGN_UP("Зарегистрироваться"),
-    SAVE("Сохранить"),
+    NOT_READY("Извините, страница пока не готова"),
     
     ;
     
     private String item;
     
-    ButtonUtils(String item){
+    TitleUtils(String item){
         this.item=item;
     }
     
@@ -27,5 +22,5 @@ public enum ButtonUtils {
     public String toString() {
         return item;
     }
-
+    
 }

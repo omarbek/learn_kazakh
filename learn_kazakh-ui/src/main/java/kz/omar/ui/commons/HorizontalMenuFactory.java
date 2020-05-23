@@ -9,6 +9,7 @@ import kz.omar.model.entity.User;
 import kz.omar.service.task.TaskService;
 import kz.omar.service.user.UserService;
 import kz.omar.ui.start.UIComponentBuilder;
+import kz.omar.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 
@@ -93,22 +94,22 @@ public class HorizontalMenuFactory implements UIComponentBuilder {
                     new ThemeResource("../../images/others/user_on.png"), null);
             myProfileMI.addSeparator();
             
-            myProfileMI.addItem("Мой профиль",
+            myProfileMI.addItem(PageUtils.Constants.MY_PROFILE_VALUE,
                     new ThemeResource("../../images/others/user_on.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
-            myProfileMI.addItem("Mой прогресс",
+            myProfileMI.addItem(PageUtils.Constants.MY_PROGRESS_VALUE,
                     new ThemeResource("../../images/others/apply.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
-            myProfileMI.addItem("Mой словарь",
+            myProfileMI.addItem(PageUtils.Constants.MY_VOCABULARY_VALUE,
                     new ThemeResource("../../images/others/book.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                         }
                     });
-            myProfileMI.addItem("Выйти",
+            myProfileMI.addItem(PageUtils.Constants.LOGOUT_VALUE,
                     new ThemeResource("../../images/others/exit.png"), new MenuBar.Command() {
                         public void menuSelected(MenuBar.MenuItem menuItem) {
                             SecurityContextHolder.clearContext();

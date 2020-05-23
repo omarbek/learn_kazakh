@@ -3,6 +3,8 @@ package kz.omar.ui.login;
 
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+import kz.omar.utils.ButtonUtils;
+import kz.omar.utils.FieldUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -37,14 +39,14 @@ public class LoginFormFactory {
             panel = new Panel();
             panel.setSizeUndefined();
             
-            loginButton = new Button("Login");
+            loginButton = new Button(ButtonUtils.LOGIN.toString());
             loginButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
             
-            signupButton = new Button("Signup");
+            signupButton = new Button(ButtonUtils.SIGN_UP.toString());
             signupButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
             
-            username = new TextField("Username");
-            password = new PasswordField("Password");
+            username = new TextField(FieldUtils.USER_NAME.toString());
+            password = new PasswordField(FieldUtils.PASSWORD.toString());
             
             return this;
         }

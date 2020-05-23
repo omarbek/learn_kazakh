@@ -5,6 +5,9 @@ import com.vaadin.ui.themes.ValoTheme;
 import kz.omar.model.entity.Role;
 import kz.omar.service.role.RoleService;
 import kz.omar.service.user.UserService;
+import kz.omar.utils.ButtonUtils;
+import kz.omar.utils.FieldUtils;
+import kz.omar.utils.TitleUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -40,16 +43,16 @@ public class SignupFormFactory {
             root.setMargin(true);
             root.setHeight("100%");
             
-            panel = new Panel("Signup");
+            panel = new Panel(TitleUtils.SIGN_UP.toString());
             panel.setSizeUndefined();
             
-            username = new TextField("Username");
-            passwordField = new PasswordField("Password");
-            passwordAgainField = new PasswordField("Password again");
-            rolesCB = new ComboBox("Role");
+            username = new TextField(FieldUtils.USER_NAME.toString());
+            passwordField = new PasswordField(FieldUtils.PASSWORD.toString());
+            passwordAgainField = new PasswordField(FieldUtils.PASSWORD_AGAIN.toString());
+            rolesCB = new ComboBox(FieldUtils.ROLE.toString());
             rolesCB.setWidth("100%");
             
-            saveButton = new Button("Save");
+            saveButton = new Button(ButtonUtils.SAVE.toString());
             saveButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
             saveButton.addClickListener(new Button.ClickListener() {
                 public void buttonClick(Button.ClickEvent clickEvent) {
