@@ -1,5 +1,6 @@
 package kz.omar.model.entity;
 
+import kz.omar.utils.NotNullUtils;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -24,16 +25,16 @@ public class User implements UserDetails {
     private Integer id;
     
     @Column(name = "username")
-    @NotNull(message = "Username must not be null")
+    @NotNull(message = NotNullUtils.Constants.USERNAME_MUST_NOT_BE_NULL_VALUE)
     private String username;
     
     @Column(name = "password")
-    @NotNull(message = "Password must not be null")
+    @NotNull(message = NotNullUtils.Constants.PASSWORD_MUST_NOT_BE_NULL_VALUE)
     private String password;
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id")
-    @NotNull(message = "Role must not be null")
+    @NotNull(message = NotNullUtils.Constants.ROLE_MUST_NOT_BE_NULL_VALUE)
     private Role role;
     
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,5 +1,6 @@
 package kz.omar.model.entity;
 
+import kz.omar.utils.NotNullUtils;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,7 +26,7 @@ public class Task {
     private Task parent;
     
     @Column(name = "name")
-    @NotNull(message = "Name must not be null")
+    @NotNull(message = NotNullUtils.Constants.NAME_MUST_NOT_BE_NULL_VALUE)
     private String name;
     
     @Column(name = "navigate_path")
