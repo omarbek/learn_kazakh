@@ -11,6 +11,7 @@ import kz.omar.service.alphabet.AlphabetService;
 import kz.omar.ui.pages.common.AbstractPageFactory;
 import kz.omar.ui.start.LearnKazakhUI;
 import kz.omar.utils.ButtonUtils;
+import kz.omar.utils.NotificationUtils;
 import kz.omar.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -80,10 +81,10 @@ public class FindWordPageFactory extends AbstractPageFactory {
         answerButton.addStyleName(ValoTheme.BUTTON_FRIENDLY);
         answerButton.addClickListener(event -> {
             if (answeredName.equals(wordName)) {
-                Notification.show("Right");//todo
+                Notification.show(NotificationUtils.RIGHT.toString(), Notification.Type.HUMANIZED_MESSAGE);
                 count++;
             } else {
-                Notification.show("Wrong");
+                Notification.show(NotificationUtils.WRONG.toString(), Notification.Type.ERROR_MESSAGE);
             }
             answerButton.setEnabled(false);
             finishButton.setEnabled(true);
@@ -106,7 +107,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
         finishButton.addStyleName(ValoTheme.BUTTON_PRIMARY);
         finishButton.setVisible(false);
         finishButton.addClickListener(event -> {
-            Notification.show("Тренировка завершена, вы набрали " + count + " очка");
+            Notification.show("Тренировка завершена! Количество набранных очков: " + count);
             //todo navigate to empty page
         });
         

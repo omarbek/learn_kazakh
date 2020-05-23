@@ -6,6 +6,7 @@ import com.vaadin.ui.Notification;
 import com.vaadin.ui.VerticalLayout;
 import kz.omar.service.task.TaskService;
 import kz.omar.service.user.UserService;
+import kz.omar.utils.NotificationUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -34,7 +35,7 @@ public abstract class AbstractPageFactory extends VerticalLayout implements View
         Integer roleId = userService.getCurrentUser().getRole().getRoleId();
         Integer access = taskService.taskNameBelongForThisUser(taskName, roleId);
         if (access == null) {
-            Notification.show("У вас нет доступа");
+            Notification.show(NotificationUtils.NO_ACCESS.toString(), Notification.Type.WARNING_MESSAGE);
             return;
         }
         

@@ -7,6 +7,7 @@ import kz.omar.service.role.RoleService;
 import kz.omar.service.user.UserService;
 import kz.omar.utils.ButtonUtils;
 import kz.omar.utils.FieldUtils;
+import kz.omar.utils.NotificationUtils;
 import kz.omar.utils.TitleUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -57,7 +58,8 @@ public class SignupFormFactory {
             saveButton.addClickListener(new Button.ClickListener() {
                 public void buttonClick(Button.ClickEvent clickEvent) {
                     if (!passwordAgainField.getValue().equals(passwordField.getValue())) {
-                        Notification.show("Error", "Passwords do not match", Notification.Type.ERROR_MESSAGE);
+                        Notification.show(NotificationUtils.ERROR.toString(),
+                                NotificationUtils.PASSWORDS_DO_NOT_MATCH.toString(), Notification.Type.ERROR_MESSAGE);
                         return;
                     }
                     registerUserService.save(username.getValue(), passwordField.getValue(), (Role) rolesCB.getValue());

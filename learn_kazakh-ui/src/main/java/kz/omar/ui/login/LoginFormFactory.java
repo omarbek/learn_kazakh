@@ -5,6 +5,7 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import kz.omar.utils.ButtonUtils;
 import kz.omar.utils.FieldUtils;
+import kz.omar.utils.NotificationUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -73,7 +74,8 @@ public class LoginFormFactory {
                         
                         UI.getCurrent().getPage().setLocation("/learn_kazakh/ui");
                     } catch (AuthenticationException e) {
-                        Notification.show("Error!", "Login fail! Try again", Notification.Type.ERROR_MESSAGE);
+                        Notification.show(NotificationUtils.ERROR.toString(), NotificationUtils.LOGIN_FAIL.toString(),
+                                Notification.Type.ERROR_MESSAGE);
                     }
                     username.clear();
                     password.clear();

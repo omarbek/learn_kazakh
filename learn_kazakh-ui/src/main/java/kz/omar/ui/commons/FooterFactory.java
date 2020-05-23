@@ -62,7 +62,7 @@ public class FooterFactory implements UIComponentBuilder {
                 Button menuButton = new Button(task.getName());
                 menuButton.addStyleName(ValoTheme.BUTTON_BORDERLESS);
                 menuButton.addClickListener((Button.ClickEvent event) -> {
-                    Notification.show("s");
+                    Notification.show("s");//todo
                 });
                 menuButton.addStyleName("menu");
     
