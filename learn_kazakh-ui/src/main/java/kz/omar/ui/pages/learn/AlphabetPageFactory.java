@@ -90,30 +90,45 @@ public class AlphabetPageFactory extends AbstractPageFactory {
         gridLayout.addComponent(buttonsHL, 0, 2, 2, 2);
         gridLayout.setComponentAlignment(buttonsHL, Alignment.MIDDLE_CENTER);
         
-        HorizontalLayout alphabetHL = new HorizontalLayout();
-        alphabetHL.setWidthUndefined();
-        alphabetHL.setMargin(true);
-        alphabetHL.setSpacing(true);
-        
-        for (Alphabet alphabet: alphabetList) {
-            Button letterButton = new Button(alphabet.getLetter());
-            //            letterButton.addStyleName(ValoTheme.BUTTON_LINK);
-            letterButton.addClickListener(new Button.ClickListener() {
-                @Override
-                public void buttonClick(Button.ClickEvent event) {
-                    page = alphabet.getId() - 1;
-                    init(gridLayout, page);
-                }
-            });
-            alphabetHL.addComponent(letterButton);
-            alphabetHL.setComponentAlignment(letterButton, Alignment.MIDDLE_CENTER);
-        }
-        
-        gridLayout.addComponent(alphabetHL, 0, 4, 2, 4);
-        gridLayout.setComponentAlignment(alphabetHL, Alignment.MIDDLE_CENTER);
+        VerticalLayout alphabetVL = new VerticalLayout();
+        alphabetVL.setSpacing(true);
+        alphabetVL.setMargin(true);
+        initAlphabet(alphabetVL, 4, true, gridLayout);
+        initAlphabet(alphabetVL, 5, false, gridLayout);
+        gridLayout.addComponent(alphabetVL, 0, 4, 2, 4);
+        gridLayout.setComponentAlignment(alphabetVL, Alignment.MIDDLE_CENTER);
         
         panel.setContent(gridLayout);
         addComponent(panel);
+    }
+    
+    private void initAlphabet(VerticalLayout alphabetVL, int row, boolean firstPart, GridLayout gridLayout) {
+        HorizontalLayout alphabetHL = new HorizontalLayout();
+        alphabetHL.setWidthUndefined();
+        alphabetHL.setSpacing(true);
+        
+        int count = 0;
+        for (Alphabet alphabet: alphabetList) {
+            if ((firstPart && count >= 0 && count < 21)
+                    || (!firstPart && count >= 21)) {
+                Button letterButton = new Button(alphabet.getLetter());
+                //            letterButton.addStyleName(ValoTheme.BUTTON_LINK);
+                letterButton.addClickListener(new Button.ClickListener() {
+                    @Override
+                    public void buttonClick(Button.ClickEvent event) {
+                        page = alphabet.getId() - 1;
+                        init(gridLayout, page);
+                    }
+                });
+                alphabetHL.addComponent(letterButton);
+                alphabetHL.setComponentAlignment(letterButton, Alignment.MIDDLE_CENTER);
+            }
+            count++;
+        }
+        
+        alphabetVL.addComponent(alphabetHL);
+        alphabetVL.setComponentAlignment(alphabetHL, Alignment.MIDDLE_CENTER);
+        
     }
     
     private void init(GridLayout gridLayout, int page) {
