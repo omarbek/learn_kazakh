@@ -63,5 +63,11 @@
     <changeSet logicalFilePath="path-independent" id="omar_19" author="omar">
         <sqlFile path="/omar/20200606/script_1.sql" relativeToChangelogFile="true" splitStatements="true"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" id="omar_20" author="omar">
+        <sqlFile path="/omar/20200606/script_2.sql" relativeToChangelogFile="true" splitStatements="true"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" id="omar_21" author="omar">
+        <sqlFile path="/omar/20200618/script_1.sql" relativeToChangelogFile="true" splitStatements="true"/>
+    </changeSet>
 
 </databaseChangeLog>

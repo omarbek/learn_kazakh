@@ -1,0 +1,10 @@
+insert into alphabet values (33, 'Чч');
+insert into alphabet values (34, 'Шш');
+insert into alphabet values (35, 'Щщ');
+insert into alphabet values (36, 'Ъъ');
+insert into alphabet values (37, 'Ыы');
+insert into alphabet values (38, 'Іі');
+insert into alphabet values (39, 'Ьь');
+insert into alphabet values (40, 'Ээ');
+insert into alphabet values (41, 'Юю');
+insert into alphabet values (42, 'Яя');
