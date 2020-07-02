@@ -17,6 +17,7 @@ public enum PageUtils {
     BOOKS(Constants.BOOKS_VALUE),
     MAIN(Constants.MAIN_VALUE),
     MUSIC(Constants.MUSIC_VALUE),
+    FIND_WORD_TEST(Constants.FIND_WORD_TEST_VALUE),
     
     ;
     
@@ -34,6 +35,7 @@ public enum PageUtils {
         public static final String BOOKS_VALUE = "книги";
         public static final String MAIN_VALUE = "главная";
         public static final String MUSIC_VALUE = "музыка";
+        public static final String FIND_WORD_TEST_VALUE = "тестнайдислово";
     }
     
 }
