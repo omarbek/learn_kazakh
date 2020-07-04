@@ -7,5 +7,8 @@
     <facet __external-system-id="Maven" type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet __external-system-id="Maven" type="Spring" name="Spring">
+      <configuration />
+    </facet>
   </component>
 </module>

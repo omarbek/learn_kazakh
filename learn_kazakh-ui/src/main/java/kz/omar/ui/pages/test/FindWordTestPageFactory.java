@@ -8,6 +8,8 @@ import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import kz.omar.model.entity.AlphabetMedia;
 import kz.omar.service.alphabet.AlphabetService;
+import kz.omar.service.test.TestService;
+import kz.omar.service.user.UserService;
 import kz.omar.ui.pages.common.AbstractPageFactory;
 import kz.omar.ui.start.LearnKazakhUI;
 import kz.omar.utils.ButtonUtils;
@@ -23,13 +25,19 @@ import java.util.List;
  * on 2020-07-02
  * @project learn_kazakh
  */
-@SpringView(name = FindWordPageFactory.NAME, ui = LearnKazakhUI.class)
-public class FindWordPageFactory extends AbstractPageFactory {
+@SpringView(name = FindWordTestPageFactory.NAME, ui = LearnKazakhUI.class)
+public class FindWordTestPageFactory extends AbstractPageFactory {
     
     static final String NAME = PageUtils.Constants.FIND_WORD_TEST_VALUE;
     
     @Autowired
     private AlphabetService alphabetService;
+    
+    @Autowired
+    private TestService testService;
+    
+    @Autowired
+    private UserService userService;
     
     private List<AlphabetMedia> wordAlphabetList;
     private List<AlphabetMedia> randomAlphabetList;
@@ -45,7 +53,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
     private String answeredName;
     private int count = 0;
     
-    public FindWordPageFactory() {
+    public FindWordTestPageFactory() {
         super(NAME);
         wordAlphabetList = new ArrayList<>();
         randomAlphabetList = new ArrayList<>();
@@ -109,7 +117,7 @@ public class FindWordPageFactory extends AbstractPageFactory {
         finishButton.addClickListener(event -> {
             Notification.show("Тренировка завершена! Количество набранных очков: " + count);
             //todo navigate to empty page
-            
+            testService.save(userService.getCurrentUser(), 1, count);
         });
         
         init(gridLayout, page);

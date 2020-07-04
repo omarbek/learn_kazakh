@@ -16,13 +16,8 @@ import javax.validation.constraints.NotNull;
 @Data
 public class TestResult {
     
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
-    
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "test_id")
-    private Test test;
+    @EmbeddedId
+    private TestResultIdentity testResultIdentity;
     
     @Column(name = "score")
     private int score;
